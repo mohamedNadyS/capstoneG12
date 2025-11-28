@@ -1,0 +1,57 @@
+
+================================================================================
+TRAFFIC PREDICTION MODEL - TEST REPORT
+================================================================================
+
+Test Date: 2025-11-26 22:17:40
+Model: gat_metrla_best.pth
+Dataset: METR-LA
+
+TEST SET INFORMATION
+--------------------
+Total Timesteps: 5141 (428.4 hours)
+Number of Sensors: 207
+Test Samples: 5126
+
+OVERALL PERFORMANCE
+-------------------
+MAE:  2.8883 km/h
+RMSE: 5.0752 km/h
+MAPE: 7.79%
+
+PER-HORIZON PERFORMANCE
+-----------------------
+
+Horizon 1 (t+5 min):
+  MAE:  2.5836 km/h
+  RMSE: 4.3232 km/h
+  MAPE: 6.73%
+
+Horizon 2 (t+10 min):
+  MAE:  2.9171 km/h
+  RMSE: 5.1183 km/h
+  MAPE: 7.87%
+
+Horizon 3 (t+15 min):
+  MAE:  3.1641 km/h
+  RMSE: 5.6910 km/h
+  MAPE: 8.77%
+
+PER-NODE STATISTICS
+-------------------
+Mean MAE across all nodes: 2.8883 km/h
+Std Dev: 1.1039 km/h
+Min MAE: 1.0564 km/h (Node 183)
+Max MAE: 6.5512 km/h (Node 163)
+
+GENERATED FILES
+---------------
+1. timeseries_comparison.png - Time series predictions vs actual
+2. scatter_plots.png - Predicted vs actual scatter plots
+3. error_distribution.png - Error histograms by horizon
+4. per_node_mae.png - Error by sensor/node
+5. metrics_comparison.png - MAE/RMSE comparison chart
+6. test_results.json - Complete results in JSON format
+7. test_report.txt - This report
+
+================================================================================

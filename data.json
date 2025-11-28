@@ -1,0 +1,167 @@
+{
+  "roads": {
+    "1": {
+      "vehicle_count": 14,
+      "avg_speed": 32.5,
+      "pollution": 11.2,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "2": {
+      "vehicle_count": 5,
+      "avg_speed": 28.3,
+      "pollution": 8.4,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "3": {
+      "vehicle_count": 22,
+      "avg_speed": 25.1,
+      "pollution": 15.9,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "4": {
+      "vehicle_count": 9,
+      "avg_speed": 35.2,
+      "pollution": 10.5,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "5": {
+      "vehicle_count": 6,
+      "avg_speed": 21.4,
+      "pollution": 6.8,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "6": {
+      "vehicle_count": 11,
+      "avg_speed": 18.9,
+      "pollution": 7.4,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "7": {
+      "vehicle_count": 17,
+      "avg_speed": 27.2,
+      "pollution": 12.1,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "8": {
+      "vehicle_count": 13,
+      "avg_speed": 30.4,
+      "pollution": 13.3,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "9": {
+      "vehicle_count": 3,
+      "avg_speed": 12.6,
+      "pollution": 5.4,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "10": {
+      "vehicle_count": 4,
+      "avg_speed": 16.1,
+      "pollution": 4.9,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "11": {
+      "vehicle_count": 7,
+      "avg_speed": 14.9,
+      "pollution": 5.2,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "12": {
+      "vehicle_count": 10,
+      "avg_speed": 19.7,
+      "pollution": 6.1,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "13": {
+      "vehicle_count": 8,
+      "avg_speed": 22.4,
+      "pollution": 7.8,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "14": {
+      "vehicle_count": 16,
+      "avg_speed": 29.3,
+      "pollution": 11.5,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "15": {
+      "vehicle_count": 20,
+      "avg_speed": 33.7,
+      "pollution": 14.0,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "16": {
+      "vehicle_count": 12,
+      "avg_speed": 31.1,
+      "pollution": 10.9,
+      "last_update": "2025-11-26T23:00:00Z"
+    },
+    "17": {
+      "vehicle_count": 6,
+      "avg_speed": 17.3,
+      "pollution": 6.7,
+      "last_update": "2025-11-26T23:00:00Z"
+    }
+  },
+
+  "emergency_vehicle": {
+    "id": "EV1",
+    "start_edge": "1",
+    "start_lane": "lane_0",
+    "target_edge": "7",
+    "desired_departure_time": 5.0,
+    "priority": 10
+  },
+
+  "simulation_config": {
+    "sumo_net_file": "net.net.xml",
+    "route_file": "routes.rou.xml",
+    "step_length": 1.0,
+    "max_simulation_seconds": 3600
+  },
+
+  "traffic_lights": {
+    "TL1": {
+      "program_id": 1,
+      "phase_index": 0,
+      "phase_duration": 30.0
+    },
+    "TL2": {
+      "program_id": 1,
+      "phase_index": 1,
+      "phase_duration": 25.0
+    }
+  },
+
+  "ai_state": {
+    "last_prediction_time": "2025-11-26T23:00:00Z",
+    "edge_predictions": {
+      "1": 29.4,
+      "2": 26.1,
+      "3": 22.8,
+      "4": 33.0,
+      "5": 20.3,
+      "6": 18.7,
+      "7": 27.9,
+      "8": 31.0,
+      "9": 11.9,
+      "10": 16.8,
+      "11": 15.5,
+      "12": 20.1,
+      "13": 23.0,
+      "14": 30.1,
+      "15": 34.0,
+      "16": 31.8,
+      "17": 17.0
+    }
+  },
+
+  "test_plan_results": {
+    "1": {
+      "actual_time_taken": 83.2,
+      "baseline_time_taken": 110.4,
+      "created_at": "2025-11-26T23:00:00Z",
+      "notes": "Test run using EV1 from edge 1 to edge 7."
+    }
+  }
+}
