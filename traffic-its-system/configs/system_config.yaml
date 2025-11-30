@@ -1,0 +1,47 @@
+# ============================================================================
+# ITS System Configuration
+# Information and Communication Technology for Intelligent Transportation
+# ============================================================================
+
+system:
+  name: "ITS Traffic Management System"
+  version: "1.0.0"
+  debug: true
+
+paths:
+  data_dir: "./data"
+  sumo_dir: "./data/sumo"
+  generated_dir: "./data/generated"
+  models_dir: "./models/trained"
+  outputs_dir: "./outputs"
+
+sumo:
+  net_file: "map.net.xml"
+  route_file: "map.rou.xml"
+  config_file: "map.sumocfg"
+  gui: true
+  step_length: 1.0  # seconds
+  max_simulation_time: 3600  # 1 hour
+
+prediction:
+  model_file: "gat_metrla_best.pth"
+  scaler_file: "scaler_metrla.pkl"
+  input_window: 12  # timesteps (12 * 5min = 1 hour)
+  prediction_horizon: 3  # timesteps (3 * 5min = 15 min)
+  timestep_minutes: 5
+
+routing:
+  default_algorithm: "astar"  # "astar" or "dijkstra"
+  emergency_algorithm: "dijkstra"
+  congestion_penalty_factor: 2.0
+  capacity_threshold: 0.8  # 80% capacity
+  
+metrics:
+  collect_trip_time: true
+  collect_fuel_consumption: true
+  collect_waiting_time: true
+  collect_throughput: true
+  
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "./outputs/logs/system.log"

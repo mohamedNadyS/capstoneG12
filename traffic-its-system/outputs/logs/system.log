@@ -1,0 +1,241 @@
+2025-11-28 16:56:37,794 | TrafficGen | INFO     | ======================================================================
+2025-11-28 16:56:37,795 | TrafficGen | INFO     | ITS TRAFFIC GENERATION
+2025-11-28 16:56:37,795 | TrafficGen | INFO     | ======================================================================
+2025-11-28 16:56:37,795 | TrafficGen | INFO     | Network file: ./data/sumo/map.net.xml
+2025-11-28 16:56:37,795 | TrafficGen | INFO     | Output directory: ./data/generated
+2025-11-28 16:56:37,795 | TrafficGen | INFO     | 
+2025-11-28 16:56:37,795 | TrafficGen | INFO     | [Step 1/3] Parsing SUMO network...
+2025-11-28 16:56:37,797 | TrafficGen | INFO     | [Step 2/3] Initializing traffic generator...
+2025-11-28 16:56:37,797 | TrafficGen | INFO     | [Step 3/3] Generating traffic scenario...
+2025-11-28 16:56:37,797 | TrafficGen | INFO     | 
+2025-11-28 16:56:37,836 | TrafficGen | INFO     | 📊 Scenario Summary:
+2025-11-28 16:56:37,836 | TrafficGen | INFO     |    • Vehicles: 100
+2025-11-28 16:56:37,836 | TrafficGen | INFO     |    • Edges with traffic: 24
+2025-11-28 16:56:37,836 | TrafficGen | INFO     |    • Speed history timesteps: 12
+2025-11-28 16:56:37,836 | TrafficGen | INFO     | 
+2025-11-28 16:56:37,836 | TrafficGen | INFO     | ✅ Traffic generation completed successfully!
+2025-11-28 16:56:37,837 | TrafficGen | INFO     | 
+2025-11-28 16:56:37,837 | TrafficGen | INFO     | Next steps:
+2025-11-28 16:56:37,837 | TrafficGen | INFO     |   1. Run GNN prediction: python scripts/2_run_prediction.py
+2025-11-28 16:56:37,837 | TrafficGen | INFO     |   2. Generate routes: python scripts/3_generate_routes.py
+2025-11-28 16:56:37,837 | TrafficGen | INFO     |   3. Run SUMO simulation: python scripts/4_run_sumo_gui.py
+2025-11-28 16:56:37,837 | TrafficGen | INFO     | 
+2025-11-28 17:00:55,653 | TrafficGen | INFO     | ======================================================================
+2025-11-28 17:00:55,654 | TrafficGen | INFO     | ITS TRAFFIC GENERATION
+2025-11-28 17:00:55,654 | TrafficGen | INFO     | ======================================================================
+2025-11-28 17:00:55,654 | TrafficGen | INFO     | Network file: ./data/sumo/map.net.xml
+2025-11-28 17:00:55,654 | TrafficGen | INFO     | Output directory: ./data/generated
+2025-11-28 17:00:55,654 | TrafficGen | INFO     | 
+2025-11-28 17:00:55,654 | TrafficGen | INFO     | [Step 1/3] Parsing SUMO network...
+2025-11-28 17:00:55,662 | TrafficGen | INFO     | [Step 2/3] Initializing traffic generator...
+2025-11-28 17:00:55,662 | TrafficGen | INFO     | [Step 3/3] Generating traffic scenario...
+2025-11-28 17:00:55,662 | TrafficGen | INFO     | 
+2025-11-28 17:00:55,723 | TrafficGen | INFO     | 📊 Scenario Summary:
+2025-11-28 17:00:55,723 | TrafficGen | INFO     |    • Vehicles: 1200
+2025-11-28 17:00:55,723 | TrafficGen | INFO     |    • Edges with traffic: 95
+2025-11-28 17:00:55,723 | TrafficGen | INFO     |    • Speed history timesteps: 12
+2025-11-28 17:00:55,723 | TrafficGen | INFO     | 
+2025-11-28 17:00:55,723 | TrafficGen | INFO     | ✅ Traffic generation completed successfully!
+2025-11-28 17:00:55,724 | TrafficGen | INFO     | 
+2025-11-28 17:00:55,724 | TrafficGen | INFO     | Next steps:
+2025-11-28 17:00:55,724 | TrafficGen | INFO     |   1. Run GNN prediction: python scripts/2_run_prediction.py
+2025-11-28 17:00:55,724 | TrafficGen | INFO     |   2. Generate routes: python scripts/3_generate_routes.py
+2025-11-28 17:00:55,724 | TrafficGen | INFO     |   3. Run SUMO simulation: python scripts/4_run_sumo_gui.py
+2025-11-28 17:00:55,724 | TrafficGen | INFO     | 
+2025-11-28 17:02:00,916 | TrafficGen | INFO     | ======================================================================
+2025-11-28 17:02:00,916 | TrafficGen | INFO     | ITS TRAFFIC GENERATION
+2025-11-28 17:02:00,917 | TrafficGen | INFO     | ======================================================================
+2025-11-28 17:02:00,917 | TrafficGen | INFO     | Network file: ./data/sumo/map.net.xml
+2025-11-28 17:02:00,917 | TrafficGen | INFO     | Output directory: data/scenarios/baseline
+2025-11-28 17:02:00,917 | TrafficGen | INFO     | 
+2025-11-28 17:02:00,917 | TrafficGen | INFO     | [Step 1/3] Parsing SUMO network...
+2025-11-28 17:02:00,924 | TrafficGen | INFO     | [Step 2/3] Initializing traffic generator...
+2025-11-28 17:02:00,925 | TrafficGen | INFO     | [Step 3/3] Generating traffic scenario...
+2025-11-28 17:02:00,925 | TrafficGen | INFO     | 
+2025-11-28 17:02:00,966 | TrafficGen | INFO     | 📊 Scenario Summary:
+2025-11-28 17:02:00,966 | TrafficGen | INFO     |    • Vehicles: 300
+2025-11-28 17:02:00,966 | TrafficGen | INFO     |    • Edges with traffic: 95
+2025-11-28 17:02:00,966 | TrafficGen | INFO     |    • Speed history timesteps: 12
+2025-11-28 17:02:00,966 | TrafficGen | INFO     | 
+2025-11-28 17:02:00,966 | TrafficGen | INFO     | ✅ Traffic generation completed successfully!
+2025-11-28 17:02:00,966 | TrafficGen | INFO     | 
+2025-11-28 17:02:00,966 | TrafficGen | INFO     | Next steps:
+2025-11-28 17:02:00,966 | TrafficGen | INFO     |   1. Run GNN prediction: python scripts/2_run_prediction.py
+2025-11-28 17:02:00,966 | TrafficGen | INFO     |   2. Generate routes: python scripts/3_generate_routes.py
+2025-11-28 17:02:00,967 | TrafficGen | INFO     |   3. Run SUMO simulation: python scripts/4_run_sumo_gui.py
+2025-11-28 17:02:00,967 | TrafficGen | INFO     | 
+2025-11-28 17:02:06,387 | TrafficGen | INFO     | ======================================================================
+2025-11-28 17:02:06,387 | TrafficGen | INFO     | ITS TRAFFIC GENERATION
+2025-11-28 17:02:06,387 | TrafficGen | INFO     | ======================================================================
+2025-11-28 17:02:06,387 | TrafficGen | INFO     | Network file: ./data/sumo/map.net.xml
+2025-11-28 17:02:06,387 | TrafficGen | INFO     | Output directory: data/scenarios/rush_hour
+2025-11-28 17:02:06,388 | TrafficGen | INFO     | 
+2025-11-28 17:02:06,388 | TrafficGen | INFO     | [Step 1/3] Parsing SUMO network...
+2025-11-28 17:02:06,395 | TrafficGen | INFO     | [Step 2/3] Initializing traffic generator...
+2025-11-28 17:02:06,395 | TrafficGen | INFO     | [Step 3/3] Generating traffic scenario...
+2025-11-28 17:02:06,395 | TrafficGen | INFO     | 
+2025-11-28 17:02:06,474 | TrafficGen | INFO     | 📊 Scenario Summary:
+2025-11-28 17:02:06,475 | TrafficGen | INFO     |    • Vehicles: 2150
+2025-11-28 17:02:06,475 | TrafficGen | INFO     |    • Edges with traffic: 95
+2025-11-28 17:02:06,475 | TrafficGen | INFO     |    • Speed history timesteps: 12
+2025-11-28 17:02:06,475 | TrafficGen | INFO     | 
+2025-11-28 17:02:06,475 | TrafficGen | INFO     | ✅ Traffic generation completed successfully!
+2025-11-28 17:02:06,475 | TrafficGen | INFO     | 
+2025-11-28 17:02:06,475 | TrafficGen | INFO     | Next steps:
+2025-11-28 17:02:06,475 | TrafficGen | INFO     |   1. Run GNN prediction: python scripts/2_run_prediction.py
+2025-11-28 17:02:06,475 | TrafficGen | INFO     |   2. Generate routes: python scripts/3_generate_routes.py
+2025-11-28 17:02:06,475 | TrafficGen | INFO     |   3. Run SUMO simulation: python scripts/4_run_sumo_gui.py
+2025-11-28 17:02:06,475 | TrafficGen | INFO     | 
+2025-11-30 19:27:38,419 | TrafficGen | INFO     | ======================================================================
+2025-11-30 19:27:38,420 | TrafficGen | INFO     | ITS TRAFFIC GENERATION
+2025-11-30 19:27:38,420 | TrafficGen | INFO     | ======================================================================
+2025-11-30 19:27:38,420 | TrafficGen | INFO     | Network file: ./data/sumo/map.net.xml
+2025-11-30 19:27:38,421 | TrafficGen | INFO     | Output directory: ./data/generated
+2025-11-30 19:27:38,421 | TrafficGen | INFO     | 
+2025-11-30 19:27:38,421 | TrafficGen | INFO     | [Step 1/3] Parsing SUMO network...
+2025-11-30 19:27:38,475 | TrafficGen | INFO     | [Step 2/3] Initializing traffic generator...
+2025-11-30 19:27:38,476 | TrafficGen | INFO     | [Step 3/3] Generating traffic scenario...
+2025-11-30 19:27:38,476 | TrafficGen | INFO     | 
+2025-11-30 19:27:39,615 | TrafficGen | INFO     | 📊 Scenario Summary:
+2025-11-30 19:27:39,618 | TrafficGen | INFO     |    • Vehicles: 1500
+2025-11-30 19:27:39,621 | TrafficGen | INFO     |    • Edges with traffic: 95
+2025-11-30 19:27:39,622 | TrafficGen | INFO     |    • Speed history timesteps: 12
+2025-11-30 19:27:39,623 | TrafficGen | INFO     | 
+2025-11-30 19:27:39,627 | TrafficGen | INFO     | ✅ Traffic generation completed successfully!
+2025-11-30 19:27:39,627 | TrafficGen | INFO     | 
+2025-11-30 19:27:39,628 | TrafficGen | INFO     | Next steps:
+2025-11-30 19:27:39,628 | TrafficGen | INFO     |   1. Run GNN prediction: python scripts/2_run_prediction.py
+2025-11-30 19:27:39,631 | TrafficGen | INFO     |   2. Generate routes: python scripts/3_generate_routes.py
+2025-11-30 19:27:39,631 | TrafficGen | INFO     |   3. Run SUMO simulation: python scripts/4_run_sumo_gui.py
+2025-11-30 19:27:39,632 | TrafficGen | INFO     | 
+2025-11-30 19:30:29,204 | Prediction | INFO     | ======================================================================
+2025-11-30 19:30:29,206 | Prediction | INFO     | ITS TRAFFIC SPEED PREDICTION
+2025-11-30 19:30:29,206 | Prediction | INFO     | ======================================================================
+2025-11-30 19:30:29,208 | Prediction | INFO     | 
+📂 Configuration:
+2025-11-30 19:30:29,209 | Prediction | INFO     |    Scenario: data/generated
+2025-11-30 19:30:29,209 | Prediction | INFO     |    Model: models\trained\gat_metrla_best.pth
+2025-11-30 19:30:29,209 | Prediction | INFO     |    Scaler: models\trained\scaler_metrla.pkl
+2025-11-30 19:30:29,209 | Prediction | INFO     |    Network: data\sumo\map.net.xml
+2025-11-30 19:30:29,210 | Prediction | INFO     |    Mapping: interpolate
+2025-11-30 19:30:29,210 | Prediction | INFO     |    Device: auto
+2025-11-30 19:30:29,210 | Prediction | INFO     | 
+2025-11-30 19:30:29,210 | Prediction | INFO     | [Step 1/3] Parsing SUMO network...
+2025-11-30 19:30:29,222 | Prediction | INFO     | [Step 2/3] Initializing prediction pipeline...
+2025-11-30 19:30:43,692 | Prediction | INFO     | [Step 3/3] Running prediction...
+2025-11-30 19:30:43,844 | Prediction | INFO     | 
+📊 Prediction Summary:
+2025-11-30 19:30:43,845 | Prediction | INFO     | 
+  Horizon: t+5 minutes
+2025-11-30 19:30:43,845 | Prediction | INFO     |     Mean speed: 29.19 km/h
+2025-11-30 19:30:43,846 | Prediction | INFO     |     Speed range: [7.98, 62.35] km/h
+2025-11-30 19:30:43,846 | Prediction | INFO     |     Std dev: 10.15 km/h
+2025-11-30 19:30:43,846 | Prediction | INFO     | 
+  Horizon: t+10 minutes
+2025-11-30 19:30:43,846 | Prediction | INFO     |     Mean speed: 29.21 km/h
+2025-11-30 19:30:43,847 | Prediction | INFO     |     Speed range: [7.98, 62.46] km/h
+2025-11-30 19:30:43,847 | Prediction | INFO     |     Std dev: 10.15 km/h
+2025-11-30 19:30:43,847 | Prediction | INFO     | 
+  Horizon: t+15 minutes
+2025-11-30 19:30:43,847 | Prediction | INFO     |     Mean speed: 29.20 km/h
+2025-11-30 19:30:43,847 | Prediction | INFO     |     Speed range: [7.97, 62.44] km/h
+2025-11-30 19:30:43,848 | Prediction | INFO     |     Std dev: 10.15 km/h
+2025-11-30 19:30:43,848 | Prediction | INFO     | 
+📋 Sample Predictions:
+2025-11-30 19:30:43,848 | Prediction | INFO     | 
+  1:
+2025-11-30 19:30:43,848 | Prediction | INFO     |     t+5min:  54.84 km/h
+2025-11-30 19:30:43,849 | Prediction | INFO     |     t+10min: 54.75 km/h
+2025-11-30 19:30:43,849 | Prediction | INFO     |     t+15min: 54.75 km/h
+2025-11-30 19:30:43,849 | Prediction | INFO     |     Confidence: 0.645
+2025-11-30 19:30:43,849 | Prediction | INFO     | 
+  10:
+2025-11-30 19:30:43,850 | Prediction | INFO     |     t+5min:  32.75 km/h
+2025-11-30 19:30:43,850 | Prediction | INFO     |     t+10min: 32.66 km/h
+2025-11-30 19:30:43,851 | Prediction | INFO     |     t+15min: 32.63 km/h
+2025-11-30 19:30:43,851 | Prediction | INFO     |     Confidence: 0.821
+2025-11-30 19:30:43,851 | Prediction | INFO     | 
+  11:
+2025-11-30 19:30:43,851 | Prediction | INFO     |     t+5min:  29.46 km/h
+2025-11-30 19:30:43,853 | Prediction | INFO     |     t+10min: 29.46 km/h
+2025-11-30 19:30:43,853 | Prediction | INFO     |     t+15min: 29.45 km/h
+2025-11-30 19:30:43,854 | Prediction | INFO     |     Confidence: 0.809
+2025-11-30 19:30:43,861 | Prediction | INFO     | 
+✅ Prediction completed successfully!
+2025-11-30 19:30:43,862 | Prediction | INFO     |    Predictions saved to: data\generated\predictions.json
+2025-11-30 19:30:43,862 | Prediction | INFO     | 
+2025-11-30 19:30:43,862 | Prediction | INFO     | Next steps:
+2025-11-30 19:30:43,862 | Prediction | INFO     |   1. Review predictions: cat data\generated\predictions.json | python -m json.tool
+2025-11-30 19:30:43,863 | Prediction | INFO     |   2. Generate routes: python scripts/3_generate_routes.py
+2025-11-30 19:30:43,863 | Prediction | INFO     |   3. Run SUMO simulation: python scripts/4_run_sumo_gui.py
+2025-11-30 19:30:43,863 | Prediction | INFO     | 
+2025-11-30 19:31:43,837 | Routing | INFO     | ======================================================================
+2025-11-30 19:31:43,838 | Routing | INFO     | ITS TRAFFIC ROUTING
+2025-11-30 19:31:43,838 | Routing | INFO     | ======================================================================
+2025-11-30 19:31:43,839 | Routing | INFO     | 
+Configuration:
+2025-11-30 19:31:43,840 | Routing | INFO     |    Scenario: data\generated
+2025-11-30 19:31:43,840 | Routing | INFO     |    Network: data\sumo\map.net.xml
+2025-11-30 19:31:43,841 | Routing | INFO     |    Output: data\generated
+2025-11-30 19:31:43,841 | Routing | INFO     |    Emergency priority: True
+2025-11-30 19:31:43,841 | Routing | INFO     | 
+2025-11-30 19:31:43,841 | Routing | INFO     | [Step 1/6] Loading scenario data...
+2025-11-30 19:31:43,842 | Routing | INFO     | [DATA] Loading scenario data from: data\generated
+2025-11-30 19:31:43,843 | Routing | INFO     |    [OK] Loaded predictions for 95 edges
+2025-11-30 19:31:43,848 | Routing | INFO     |    [OK] Loaded 1500 vehicles
+2025-11-30 19:31:43,872 | Routing | INFO     |    [OK] Loaded edge states
+2025-11-30 19:31:43,872 | Routing | INFO     | [Step 2/6] Parsing SUMO network...
+2025-11-30 19:31:43,891 | Routing | INFO     | [Step 3/6] Building routing graph...
+2025-11-30 19:31:43,892 | Routing | INFO     |    Loaded predictions for 95 edges
+2025-11-30 19:31:43,892 | Routing | INFO     |    Loaded congestion for 95 edges
+2025-11-30 19:31:43,898 | Routing | INFO     | 
+   Graph statistics:
+2025-11-30 19:31:43,899 | Routing | INFO     |       Nodes: 33
+2025-11-30 19:31:43,900 | Routing | INFO     |       Edges: 95
+2025-11-30 19:31:43,901 | Routing | INFO     |       Avg predicted speed: 29.19 km/h
+2025-11-30 19:31:43,901 | Routing | INFO     |       Avg travel time: 2.70 seconds
+2025-11-30 19:31:43,902 | Routing | INFO     |       Avg congestion: 92.37%
+2025-11-30 19:31:43,903 | Routing | INFO     |       Avg safety score: 0.62
+2025-11-30 19:31:43,903 | Routing | INFO     | 
+[Step 4/6] Preparing vehicles...
+2025-11-30 19:31:43,903 | Routing | INFO     | 
+[PREP] Preparing vehicles for routing...
+2025-11-30 19:31:43,926 | Routing | INFO     |    Network connectivity:
+2025-11-30 19:31:43,927 | Routing | INFO     |       Total nodes: 33
+2025-11-30 19:31:43,927 | Routing | INFO     |       Usable nodes: 33 (100.0%)
+2025-11-30 19:31:43,927 | Routing | INFO     |       Connected components: 1
+2025-11-30 19:31:43,927 | Routing | INFO     |       Strongly connected: True
+2025-11-30 19:31:43,982 | Routing | INFO     |    [OK] Prepared 1454 vehicles
+2025-11-30 19:31:43,983 | Routing | INFO     |       Emergency: 73
+2025-11-30 19:31:43,984 | Routing | INFO     |       Normal: 1381
+2025-11-30 19:31:43,985 | Routing | INFO     |       Skipped: 46 vehicles
+2025-11-30 19:31:43,985 | Routing | INFO     |          Edge not found: 0
+2025-11-30 19:31:43,985 | Routing | INFO     |          Same origin/dest: 46
+2025-11-30 19:31:43,985 | Routing | INFO     |          Not in largest SCC: 0
+2025-11-30 19:31:43,986 | Routing | INFO     |          No directed path: 0
+2025-11-30 19:31:43,986 | Routing | INFO     | 
+[Step 5/6] Routing vehicles...
+2025-11-30 19:31:44,728 | Routing | INFO     | 
+   Routing summary:
+2025-11-30 19:31:44,730 | Routing | INFO     |       Total vehicles: 432
+2025-11-30 19:31:44,731 | Routing | INFO     |       Emergency: 73
+2025-11-30 19:31:44,731 | Routing | INFO     |       Normal: 359
+2025-11-30 19:31:44,732 | Routing | INFO     |       Avg cost: 16.07 seconds
+2025-11-30 19:31:44,732 | Routing | INFO     |       Avg length: 62.17 meters
+2025-11-30 19:31:44,733 | Routing | INFO     |       Algorithm usage:
+2025-11-30 19:31:44,734 | Routing | INFO     |          A*: 359
+2025-11-30 19:31:44,734 | Routing | INFO     |          Dijkstra: 73
+2025-11-30 19:31:44,735 | Routing | INFO     | 
+[Step 6/6] Generating SUMO files...
+2025-11-30 19:31:44,892 | Routing | INFO     | 
+[OK] Routing completed successfully!
+2025-11-30 19:31:44,892 | Routing | INFO     | 
+   Generated files:
+2025-11-30 19:31:44,893 | Routing | INFO     |       Routes: data\generated\routes.rou.xml
+2025-11-30 19:31:44,894 | Routing | INFO     |       Config: data\generated\simulation.sumocfg
+2025-11-30 19:31:44,894 | Routing | INFO     |       Metadata: data\generated\routing_metadata.json
+2025-11-30 19:31:44,895 | Routing | INFO     | 
+2025-11-30 19:31:44,896 | Routing | INFO     | Next steps:
+2025-11-30 19:31:44,896 | Routing | INFO     |    1. Run SUMO-GUI: sumo-gui -c data\generated\simulation.sumocfg
+2025-11-30 19:31:44,896 | Routing | INFO     |    2. Or use script: python scripts/4_run_sumo_gui.py --config data\generated\simulation.sumocfg
+2025-11-30 19:31:44,896 | Routing | INFO     | 

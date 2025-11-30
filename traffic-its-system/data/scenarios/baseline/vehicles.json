@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "vehicle_280",
+    "origin_edge": "52",
+    "destination_edge": "54",
+    "depart_time": 1.985394082098768,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_72",
+    "origin_edge": "21",
+    "destination_edge": "27",
+    "depart_time": 29.028263469231153,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_116",
+    "origin_edge": "54",
+    "destination_edge": "93",
+    "depart_time": 34.76107326612787,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_144",
+    "origin_edge": "48",
+    "destination_edge": "72",
+    "depart_time": 39.78907621396881,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_197",
+    "origin_edge": "95",
+    "destination_edge": "34",
+    "depart_time": 47.00719498587125,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_44",
+    "origin_edge": "55",
+    "destination_edge": "84",
+    "depart_time": 49.40954860031472,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_141",
+    "origin_edge": "44",
+    "destination_edge": "14",
+    "depart_time": 60.91047079420178,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_275",
+    "origin_edge": "78",
+    "destination_edge": "16",
+    "depart_time": 79.04714385889066,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_200",
+    "origin_edge": "54",
+    "destination_edge": "18",
+    "depart_time": 93.93513234181859,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_7",
+    "origin_edge": "72",
+    "destination_edge": "56",
+    "depart_time": 120.86145713638956,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_225",
+    "origin_edge": "7",
+    "destination_edge": "53",
+    "depart_time": 126.57935521330788,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_32",
+    "origin_edge": "60",
+    "destination_edge": "43",
+    "depart_time": 131.42914015596733,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_273",
+    "origin_edge": "79",
+    "destination_edge": "90",
+    "depart_time": 131.78662326800006,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_147",
+    "origin_edge": "32",
+    "destination_edge": "87",
+    "depart_time": 132.82051538552108,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_69",
+    "origin_edge": "20",
+    "destination_edge": "63",
+    "depart_time": 138.46798710876217,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_251",
+    "origin_edge": "49",
+    "destination_edge": "73",
+    "depart_time": 141.52376784351145,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_223",
+    "origin_edge": "83",
+    "destination_edge": "85",
+    "depart_time": 166.55801680450662,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_20",
+    "origin_edge": "5",
+    "destination_edge": "66",
+    "depart_time": 177.32259268654164,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_224",
+    "origin_edge": "19",
+    "destination_edge": "76",
+    "depart_time": 191.19588277197627,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_191",
+    "origin_edge": "55",
+    "destination_edge": "73",
+    "depart_time": 195.74086738776018,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_100",
+    "origin_edge": "80",
+    "destination_edge": "72",
+    "depart_time": 208.72059244000792,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_14",
+    "origin_edge": "47",
+    "destination_edge": "4",
+    "depart_time": 230.23212421777677,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_162",
+    "origin_edge": "58",
+    "destination_edge": "60",
+    "depart_time": 230.39237389508705,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_188",
+    "origin_edge": "77",
+    "destination_edge": "70",
+    "depart_time": 234.71971046048697,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_217",
+    "origin_edge": "58",
+    "destination_edge": "15",
+    "depart_time": 238.8972460084715,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_230",
+    "origin_edge": "8",
+    "destination_edge": "81",
+    "depart_time": 268.3088549247126,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_12",
+    "origin_edge": "23",
+    "destination_edge": "74",
+    "depart_time": 272.3355646709683,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_265",
+    "origin_edge": "29",
+    "destination_edge": "34",
+    "depart_time": 291.4228250588799,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_284",
+    "origin_edge": "50",
+    "destination_edge": "84",
+    "depart_time": 292.23767404523767,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_108",
+    "origin_edge": "1",
+    "destination_edge": "19",
+    "depart_time": 322.7520234184669,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_220",
+    "origin_edge": "36",
+    "destination_edge": "22",
+    "depart_time": 324.25489633579315,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_195",
+    "origin_edge": "24",
+    "destination_edge": "49",
+    "depart_time": 342.77476012494395,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_222",
+    "origin_edge": "86",
+    "destination_edge": "40",
+    "depart_time": 358.73321240604116,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_31",
+    "origin_edge": "12",
+    "destination_edge": "49",
+    "depart_time": 363.3580589134572,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_18",
+    "origin_edge": "92",
+    "destination_edge": "34",
+    "depart_time": 371.22458953792716,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_124",
+    "origin_edge": "74",
+    "destination_edge": "22",
+    "depart_time": 390.329006942176,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_55",
+    "origin_edge": "13",
+    "destination_edge": "62",
+    "depart_time": 421.7307447839652,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_247",
+    "origin_edge": "22",
+    "destination_edge": "92",
+    "depart_time": 466.6715764789343,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_90",
+    "origin_edge": "47",
+    "destination_edge": "24",
+    "depart_time": 480.1514079291877,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_281",
+    "origin_edge": "18",
+    "destination_edge": "23",
+    "depart_time": 492.9409304219854,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_253",
+    "origin_edge": "9",
+    "destination_edge": "76",
+    "depart_time": 496.1506542310683,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_65",
+    "origin_edge": "34",
+    "destination_edge": "82",
+    "depart_time": 525.9698194290036,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_169",
+    "origin_edge": "41",
+    "destination_edge": "15",
+    "depart_time": 530.9338895109915,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_134",
+    "origin_edge": "66",
+    "destination_edge": "64",
+    "depart_time": 541.6542126341476,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_92",
+    "origin_edge": "22",
+    "destination_edge": "18",
+    "depart_time": 561.0925801855756,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_240",
+    "origin_edge": "42",
+    "destination_edge": "17",
+    "depart_time": 562.5159040234158,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_58",
+    "origin_edge": "84",
+    "destination_edge": "53",
+    "depart_time": 576.1120650455598,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_6",
+    "origin_edge": "49",
+    "destination_edge": "26",
+    "depart_time": 577.6380261834231,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_42",
+    "origin_edge": "30",
+    "destination_edge": "44",
+    "depart_time": 590.0297930440621,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_211",
+    "origin_edge": "3",
+    "destination_edge": "47",
+    "depart_time": 599.4317326783765,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_272",
+    "origin_edge": "58",
+    "destination_edge": "44",
+    "depart_time": 637.1802810963114,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_70",
+    "origin_edge": "57",
+    "destination_edge": "76",
+    "depart_time": 640.8599544016279,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_0",
+    "origin_edge": "39",
+    "destination_edge": "95",
+    "depart_time": 646.8000700831875,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_209",
+    "origin_edge": "23",
+    "destination_edge": "52",
+    "depart_time": 653.9634000284188,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_136",
+    "origin_edge": "82",
+    "destination_edge": "52",
+    "depart_time": 670.2810965013072,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_19",
+    "origin_edge": "23",
+    "destination_edge": "32",
+    "depart_time": 688.2688778589682,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_279",
+    "origin_edge": "69",
+    "destination_edge": "17",
+    "depart_time": 695.3710599350549,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_89",
+    "origin_edge": "56",
+    "destination_edge": "68",
+    "depart_time": 702.3113787316779,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_21",
+    "origin_edge": "56",
+    "destination_edge": "87",
+    "depart_time": 707.546830231401,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_204",
+    "origin_edge": "75",
+    "destination_edge": "2",
+    "depart_time": 738.6845016411518,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_254",
+    "origin_edge": "39",
+    "destination_edge": "64",
+    "depart_time": 781.0543409902222,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_73",
+    "origin_edge": "44",
+    "destination_edge": "56",
+    "depart_time": 810.1499929106378,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_114",
+    "origin_edge": "84",
+    "destination_edge": "11",
+    "depart_time": 820.6434282222137,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_2",
+    "origin_edge": "8",
+    "destination_edge": "27",
+    "depart_time": 867.9215030108954,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_33",
+    "origin_edge": "15",
+    "destination_edge": "12",
+    "depart_time": 921.7318595357602,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_160",
+    "origin_edge": "16",
+    "destination_edge": "59",
+    "depart_time": 923.2837725261401,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_97",
+    "origin_edge": "39",
+    "destination_edge": "4",
+    "depart_time": 1012.316720518299,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_39",
+    "origin_edge": "7",
+    "destination_edge": "16",
+    "depart_time": 1033.7461668185863,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_168",
+    "origin_edge": "21",
+    "destination_edge": "43",
+    "depart_time": 1068.73436276989,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_71",
+    "origin_edge": "85",
+    "destination_edge": "45",
+    "depart_time": 1072.259689464564,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_205",
+    "origin_edge": "2",
+    "destination_edge": "42",
+    "depart_time": 1074.550132830362,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_278",
+    "origin_edge": "82",
+    "destination_edge": "32",
+    "depart_time": 1080.3094602716674,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_57",
+    "origin_edge": "22",
+    "destination_edge": "89",
+    "depart_time": 1109.2704256590441,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_157",
+    "origin_edge": "7",
+    "destination_edge": "61",
+    "depart_time": 1121.8009893740716,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_216",
+    "origin_edge": "11",
+    "destination_edge": "73",
+    "depart_time": 1133.683850162059,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_167",
+    "origin_edge": "8",
+    "destination_edge": "37",
+    "depart_time": 1141.2236309729906,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_228",
+    "origin_edge": "63",
+    "destination_edge": "48",
+    "depart_time": 1146.5020449855172,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_257",
+    "origin_edge": "59",
+    "destination_edge": "16",
+    "depart_time": 1149.1789043927156,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_93",
+    "origin_edge": "51",
+    "destination_edge": "83",
+    "depart_time": 1149.613138496416,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_62",
+    "origin_edge": "44",
+    "destination_edge": "8",
+    "depart_time": 1149.6223814274322,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_122",
+    "origin_edge": "81",
+    "destination_edge": "50",
+    "depart_time": 1151.874657749356,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_171",
+    "origin_edge": "92",
+    "destination_edge": "54",
+    "depart_time": 1162.3300190092518,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_47",
+    "origin_edge": "82",
+    "destination_edge": "62",
+    "depart_time": 1165.9448631109972,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_43",
+    "origin_edge": "13",
+    "destination_edge": "27",
+    "depart_time": 1175.816793996809,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_156",
+    "origin_edge": "4",
+    "destination_edge": "35",
+    "depart_time": 1181.3507851286656,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_5",
+    "origin_edge": "37",
+    "destination_edge": "17",
+    "depart_time": 1189.1006262439794,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_41",
+    "origin_edge": "76",
+    "destination_edge": "37",
+    "depart_time": 1192.9362347209633,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_184",
+    "origin_edge": "17",
+    "destination_edge": "52",
+    "depart_time": 1216.0056728932307,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_91",
+    "origin_edge": "82",
+    "destination_edge": "12",
+    "depart_time": 1226.1435635650942,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_50",
+    "origin_edge": "61",
+    "destination_edge": "77",
+    "depart_time": 1227.1638073509232,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_56",
+    "origin_edge": "64",
+    "destination_edge": "74",
+    "depart_time": 1246.2052909563122,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_112",
+    "origin_edge": "82",
+    "destination_edge": "7",
+    "depart_time": 1267.899807548481,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_241",
+    "origin_edge": "35",
+    "destination_edge": "48",
+    "depart_time": 1272.0104879318228,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_49",
+    "origin_edge": "55",
+    "destination_edge": "81",
+    "depart_time": 1283.152435819623,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_207",
+    "origin_edge": "75",
+    "destination_edge": "61",
+    "depart_time": 1284.33434344181,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_259",
+    "origin_edge": "84",
+    "destination_edge": "61",
+    "depart_time": 1300.5229223576482,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_227",
+    "origin_edge": "45",
+    "destination_edge": "35",
+    "depart_time": 1302.2172340459538,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_256",
+    "origin_edge": "79",
+    "destination_edge": "43",
+    "depart_time": 1305.6495606422818,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_27",
+    "origin_edge": "12",
+    "destination_edge": "65",
+    "depart_time": 1308.1904559357463,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_262",
+    "origin_edge": "47",
+    "destination_edge": "94",
+    "depart_time": 1313.7948845951794,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_96",
+    "origin_edge": "41",
+    "destination_edge": "32",
+    "depart_time": 1328.4862740803896,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_214",
+    "origin_edge": "21",
+    "destination_edge": "56",
+    "depart_time": 1355.65722373853,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_258",
+    "origin_edge": "39",
+    "destination_edge": "62",
+    "depart_time": 1357.2438904549701,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_26",
+    "origin_edge": "53",
+    "destination_edge": "84",
+    "depart_time": 1368.8992233939132,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_86",
+    "origin_edge": "32",
+    "destination_edge": "90",
+    "depart_time": 1374.0577832565884,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_152",
+    "origin_edge": "6",
+    "destination_edge": "9",
+    "depart_time": 1374.0917837168363,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_142",
+    "origin_edge": "57",
+    "destination_edge": "89",
+    "depart_time": 1391.0837938416894,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_183",
+    "origin_edge": "45",
+    "destination_edge": "34",
+    "depart_time": 1391.8646796097066,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_261",
+    "origin_edge": "84",
+    "destination_edge": "41",
+    "depart_time": 1399.6638326513112,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_186",
+    "origin_edge": "84",
+    "destination_edge": "5",
+    "depart_time": 1429.1072072159038,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_166",
+    "origin_edge": "34",
+    "destination_edge": "83",
+    "depart_time": 1452.173891854497,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_2",
+    "origin_edge": "87",
+    "destination_edge": "43",
+    "depart_time": 1458.510892970037,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_23",
+    "origin_edge": "16",
+    "destination_edge": "70",
+    "depart_time": 1463.2779529458876,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_13",
+    "origin_edge": "63",
+    "destination_edge": "12",
+    "depart_time": 1465.9276472051283,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_248",
+    "origin_edge": "89",
+    "destination_edge": "38",
+    "depart_time": 1488.6773095420144,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_213",
+    "origin_edge": "84",
+    "destination_edge": "33",
+    "depart_time": 1491.9555931666853,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_6",
+    "origin_edge": "5",
+    "destination_edge": "50",
+    "depart_time": 1510.8037130742798,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_178",
+    "origin_edge": "80",
+    "destination_edge": "93",
+    "depart_time": 1520.7856806790824,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_242",
+    "origin_edge": "53",
+    "destination_edge": "32",
+    "depart_time": 1524.2476436826325,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_176",
+    "origin_edge": "32",
+    "destination_edge": "58",
+    "depart_time": 1540.693238673415,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_63",
+    "origin_edge": "62",
+    "destination_edge": "74",
+    "depart_time": 1565.7887155698118,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_146",
+    "origin_edge": "2",
+    "destination_edge": "65",
+    "depart_time": 1581.2370068060122,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_229",
+    "origin_edge": "4",
+    "destination_edge": "56",
+    "depart_time": 1625.9584778613246,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_1",
+    "origin_edge": "83",
+    "destination_edge": "50",
+    "depart_time": 1631.5727722363642,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_143",
+    "origin_edge": "62",
+    "destination_edge": "41",
+    "depart_time": 1646.8945751295357,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_28",
+    "origin_edge": "55",
+    "destination_edge": "10",
+    "depart_time": 1648.0432869376752,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_117",
+    "origin_edge": "32",
+    "destination_edge": "2",
+    "depart_time": 1663.4008757777162,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_170",
+    "origin_edge": "43",
+    "destination_edge": "4",
+    "depart_time": 1664.4455531756432,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_82",
+    "origin_edge": "48",
+    "destination_edge": "50",
+    "depart_time": 1695.111518514122,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_9",
+    "origin_edge": "89",
+    "destination_edge": "20",
+    "depart_time": 1695.9087895427951,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_84",
+    "origin_edge": "88",
+    "destination_edge": "66",
+    "depart_time": 1701.3776791374517,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_153",
+    "origin_edge": "50",
+    "destination_edge": "1",
+    "depart_time": 1710.9572327752576,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_36",
+    "origin_edge": "39",
+    "destination_edge": "32",
+    "depart_time": 1713.6912556823006,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_264",
+    "origin_edge": "14",
+    "destination_edge": "16",
+    "depart_time": 1724.7191266937284,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_243",
+    "origin_edge": "94",
+    "destination_edge": "52",
+    "depart_time": 1752.5269475834348,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_232",
+    "origin_edge": "85",
+    "destination_edge": "39",
+    "depart_time": 1771.1166707829095,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_173",
+    "origin_edge": "42",
+    "destination_edge": "53",
+    "depart_time": 1786.1330683423325,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_17",
+    "origin_edge": "42",
+    "destination_edge": "57",
+    "depart_time": 1812.7015622998915,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_128",
+    "origin_edge": "82",
+    "destination_edge": "44",
+    "depart_time": 1820.4921586743328,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_87",
+    "origin_edge": "11",
+    "destination_edge": "82",
+    "depart_time": 1828.9268284787265,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_121",
+    "origin_edge": "93",
+    "destination_edge": "51",
+    "depart_time": 1844.9239976096799,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_199",
+    "origin_edge": "46",
+    "destination_edge": "39",
+    "depart_time": 1870.1363111518938,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_175",
+    "origin_edge": "26",
+    "destination_edge": "28",
+    "depart_time": 1882.809030044837,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_68",
+    "origin_edge": "80",
+    "destination_edge": "61",
+    "depart_time": 1889.6118397897365,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_129",
+    "origin_edge": "9",
+    "destination_edge": "66",
+    "depart_time": 1926.1509779101389,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_3",
+    "origin_edge": "34",
+    "destination_edge": "32",
+    "depart_time": 1939.5158483244122,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_271",
+    "origin_edge": "48",
+    "destination_edge": "4",
+    "depart_time": 1975.2544119599368,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_172",
+    "origin_edge": "53",
+    "destination_edge": "83",
+    "depart_time": 1987.4600731740463,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_64",
+    "origin_edge": "95",
+    "destination_edge": "42",
+    "depart_time": 1988.3220583821878,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_105",
+    "origin_edge": "18",
+    "destination_edge": "69",
+    "depart_time": 1990.022715452994,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_101",
+    "origin_edge": "21",
+    "destination_edge": "8",
+    "depart_time": 2006.8344823683838,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_22",
+    "origin_edge": "45",
+    "destination_edge": "37",
+    "depart_time": 2012.5102393812429,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_215",
+    "origin_edge": "85",
+    "destination_edge": "22",
+    "depart_time": 2018.132820435044,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_246",
+    "origin_edge": "24",
+    "destination_edge": "27",
+    "depart_time": 2021.052849870138,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_125",
+    "origin_edge": "47",
+    "destination_edge": "83",
+    "depart_time": 2031.4831261181012,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_127",
+    "origin_edge": "40",
+    "destination_edge": "68",
+    "depart_time": 2036.2408595118343,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_11",
+    "origin_edge": "67",
+    "destination_edge": "86",
+    "depart_time": 2039.0267410913866,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "emergency_4",
+    "origin_edge": "86",
+    "destination_edge": "79",
+    "depart_time": 2040.7468112235056,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_237",
+    "origin_edge": "54",
+    "destination_edge": "87",
+    "depart_time": 2047.8358816485204,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_163",
+    "origin_edge": "28",
+    "destination_edge": "30",
+    "depart_time": 2049.156998199519,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_164",
+    "origin_edge": "72",
+    "destination_edge": "52",
+    "depart_time": 2083.7167820778527,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_59",
+    "origin_edge": "23",
+    "destination_edge": "68",
+    "depart_time": 2104.7155532851425,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_51",
+    "origin_edge": "26",
+    "destination_edge": "30",
+    "depart_time": 2111.1983993514364,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_277",
+    "origin_edge": "76",
+    "destination_edge": "75",
+    "depart_time": 2111.599332548179,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_123",
+    "origin_edge": "93",
+    "destination_edge": "8",
+    "depart_time": 2122.822420365358,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_234",
+    "origin_edge": "9",
+    "destination_edge": "86",
+    "depart_time": 2139.986269407908,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_263",
+    "origin_edge": "32",
+    "destination_edge": "14",
+    "depart_time": 2144.1447749845943,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_202",
+    "origin_edge": "19",
+    "destination_edge": "3",
+    "depart_time": 2147.2429232833015,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_135",
+    "origin_edge": "39",
+    "destination_edge": "11",
+    "depart_time": 2148.7358422612742,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_189",
+    "origin_edge": "89",
+    "destination_edge": "50",
+    "depart_time": 2164.821541030118,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_81",
+    "origin_edge": "7",
+    "destination_edge": "14",
+    "depart_time": 2171.979620364917,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_266",
+    "origin_edge": "34",
+    "destination_edge": "45",
+    "depart_time": 2182.8656142069253,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_46",
+    "origin_edge": "6",
+    "destination_edge": "68",
+    "depart_time": 2187.4278931696754,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_37",
+    "origin_edge": "38",
+    "destination_edge": "9",
+    "depart_time": 2189.1448805558266,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_98",
+    "origin_edge": "17",
+    "destination_edge": "14",
+    "depart_time": 2192.0702748909716,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_8",
+    "origin_edge": "54",
+    "destination_edge": "26",
+    "depart_time": 2194.7265269184604,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_276",
+    "origin_edge": "21",
+    "destination_edge": "49",
+    "depart_time": 2203.761401838339,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_226",
+    "origin_edge": "85",
+    "destination_edge": "16",
+    "depart_time": 2213.822885553115,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_45",
+    "origin_edge": "92",
+    "destination_edge": "88",
+    "depart_time": 2215.5070889023245,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_190",
+    "origin_edge": "43",
+    "destination_edge": "69",
+    "depart_time": 2221.4043416987233,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_132",
+    "origin_edge": "12",
+    "destination_edge": "90",
+    "depart_time": 2222.8710002773237,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_106",
+    "origin_edge": "79",
+    "destination_edge": "73",
+    "depart_time": 2226.2547083937725,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_118",
+    "origin_edge": "57",
+    "destination_edge": "36",
+    "depart_time": 2235.9593505647117,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_244",
+    "origin_edge": "90",
+    "destination_edge": "91",
+    "depart_time": 2242.065645287405,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_74",
+    "origin_edge": "49",
+    "destination_edge": "4",
+    "depart_time": 2249.019504748573,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_12",
+    "origin_edge": "89",
+    "destination_edge": "84",
+    "depart_time": 2259.346558317362,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_238",
+    "origin_edge": "75",
+    "destination_edge": "84",
+    "depart_time": 2269.817001389452,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_198",
+    "origin_edge": "9",
+    "destination_edge": "30",
+    "depart_time": 2276.3987037173224,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_154",
+    "origin_edge": "68",
+    "destination_edge": "4",
+    "depart_time": 2281.1605168452743,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_16",
+    "origin_edge": "74",
+    "destination_edge": "32",
+    "depart_time": 2299.3753635864114,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_94",
+    "origin_edge": "77",
+    "destination_edge": "30",
+    "depart_time": 2315.6932304087336,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_131",
+    "origin_edge": "76",
+    "destination_edge": "34",
+    "depart_time": 2318.574483598349,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_269",
+    "origin_edge": "58",
+    "destination_edge": "79",
+    "depart_time": 2331.6310580658997,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_196",
+    "origin_edge": "64",
+    "destination_edge": "19",
+    "depart_time": 2336.09598856481,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_187",
+    "origin_edge": "54",
+    "destination_edge": "34",
+    "depart_time": 2343.3234661728893,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_212",
+    "origin_edge": "78",
+    "destination_edge": "55",
+    "depart_time": 2346.4854536501994,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_11",
+    "origin_edge": "93",
+    "destination_edge": "67",
+    "depart_time": 2388.7598263095265,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_252",
+    "origin_edge": "30",
+    "destination_edge": "25",
+    "depart_time": 2402.042673915003,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_13",
+    "origin_edge": "26",
+    "destination_edge": "45",
+    "depart_time": 2408.234404305536,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_151",
+    "origin_edge": "79",
+    "destination_edge": "48",
+    "depart_time": 2419.8380475534927,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_15",
+    "origin_edge": "64",
+    "destination_edge": "43",
+    "depart_time": 2421.009695180637,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_24",
+    "origin_edge": "35",
+    "destination_edge": "81",
+    "depart_time": 2425.0031162228634,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_8",
+    "origin_edge": "56",
+    "destination_edge": "87",
+    "depart_time": 2430.5808647410695,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_66",
+    "origin_edge": "68",
+    "destination_edge": "28",
+    "depart_time": 2443.4287546705473,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_249",
+    "origin_edge": "69",
+    "destination_edge": "44",
+    "depart_time": 2454.788338490168,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_126",
+    "origin_edge": "61",
+    "destination_edge": "13",
+    "depart_time": 2474.258823669286,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_10",
+    "origin_edge": "73",
+    "destination_edge": "37",
+    "depart_time": 2483.0722307692286,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_181",
+    "origin_edge": "35",
+    "destination_edge": "10",
+    "depart_time": 2512.119404571851,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_179",
+    "origin_edge": "23",
+    "destination_edge": "18",
+    "depart_time": 2526.3113765846797,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_109",
+    "origin_edge": "33",
+    "destination_edge": "62",
+    "depart_time": 2543.6782740486397,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_67",
+    "origin_edge": "88",
+    "destination_edge": "89",
+    "depart_time": 2543.691086367525,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_110",
+    "origin_edge": "38",
+    "destination_edge": "25",
+    "depart_time": 2544.542142818965,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_53",
+    "origin_edge": "1",
+    "destination_edge": "46",
+    "depart_time": 2564.3686765165057,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_75",
+    "origin_edge": "44",
+    "destination_edge": "68",
+    "depart_time": 2566.2989191254665,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_145",
+    "origin_edge": "9",
+    "destination_edge": "1",
+    "depart_time": 2588.934328059266,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_83",
+    "origin_edge": "5",
+    "destination_edge": "52",
+    "depart_time": 2592.5847062792345,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_239",
+    "origin_edge": "72",
+    "destination_edge": "7",
+    "depart_time": 2611.519103356824,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_283",
+    "origin_edge": "31",
+    "destination_edge": "25",
+    "depart_time": 2621.5512487128676,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_193",
+    "origin_edge": "12",
+    "destination_edge": "79",
+    "depart_time": 2634.3091909507807,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_34",
+    "origin_edge": "25",
+    "destination_edge": "75",
+    "depart_time": 2642.41678613992,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_165",
+    "origin_edge": "9",
+    "destination_edge": "10",
+    "depart_time": 2644.440167180838,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_155",
+    "origin_edge": "82",
+    "destination_edge": "1",
+    "depart_time": 2660.0777139236843,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_150",
+    "origin_edge": "14",
+    "destination_edge": "38",
+    "depart_time": 2663.4006043615486,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_103",
+    "origin_edge": "53",
+    "destination_edge": "44",
+    "depart_time": 2671.4908243874174,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_48",
+    "origin_edge": "92",
+    "destination_edge": "90",
+    "depart_time": 2682.791907529211,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_180",
+    "origin_edge": "63",
+    "destination_edge": "5",
+    "depart_time": 2696.317379045214,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_203",
+    "origin_edge": "14",
+    "destination_edge": "31",
+    "depart_time": 2714.3452802998086,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_219",
+    "origin_edge": "74",
+    "destination_edge": "54",
+    "depart_time": 2719.2247064885264,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_192",
+    "origin_edge": "35",
+    "destination_edge": "62",
+    "depart_time": 2731.6476784124125,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_80",
+    "origin_edge": "91",
+    "destination_edge": "7",
+    "depart_time": 2732.2844627912054,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_138",
+    "origin_edge": "94",
+    "destination_edge": "41",
+    "depart_time": 2736.2124428316997,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_25",
+    "origin_edge": "41",
+    "destination_edge": "40",
+    "depart_time": 2740.746640061104,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_158",
+    "origin_edge": "63",
+    "destination_edge": "29",
+    "depart_time": 2748.366818820697,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_231",
+    "origin_edge": "70",
+    "destination_edge": "93",
+    "depart_time": 2749.9606410270035,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_255",
+    "origin_edge": "57",
+    "destination_edge": "61",
+    "depart_time": 2755.994568728181,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_40",
+    "origin_edge": "8",
+    "destination_edge": "6",
+    "depart_time": 2762.211460354255,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_38",
+    "origin_edge": "82",
+    "destination_edge": "39",
+    "depart_time": 2768.215686243266,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_133",
+    "origin_edge": "17",
+    "destination_edge": "18",
+    "depart_time": 2816.088587321488,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_4",
+    "origin_edge": "65",
+    "destination_edge": "51",
+    "depart_time": 2824.216160913407,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_30",
+    "origin_edge": "28",
+    "destination_edge": "65",
+    "depart_time": 2846.6851699459057,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_10",
+    "origin_edge": "17",
+    "destination_edge": "79",
+    "depart_time": 2848.5190656553063,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_268",
+    "origin_edge": "25",
+    "destination_edge": "90",
+    "depart_time": 2851.6098755214534,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_1",
+    "origin_edge": "54",
+    "destination_edge": "89",
+    "depart_time": 2851.7386649228915,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_194",
+    "origin_edge": "50",
+    "destination_edge": "48",
+    "depart_time": 2856.6457010173385,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_218",
+    "origin_edge": "68",
+    "destination_edge": "19",
+    "depart_time": 2858.41142133215,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_201",
+    "origin_edge": "79",
+    "destination_edge": "4",
+    "depart_time": 2860.5052351906525,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_250",
+    "origin_edge": "2",
+    "destination_edge": "78",
+    "depart_time": 2866.236859809377,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_14",
+    "origin_edge": "69",
+    "destination_edge": "35",
+    "depart_time": 2888.103660804139,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_148",
+    "origin_edge": "2",
+    "destination_edge": "59",
+    "depart_time": 2899.7354109036564,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_270",
+    "origin_edge": "38",
+    "destination_edge": "15",
+    "depart_time": 2900.72105093296,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_111",
+    "origin_edge": "80",
+    "destination_edge": "81",
+    "depart_time": 2921.383584398015,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_5",
+    "origin_edge": "29",
+    "destination_edge": "78",
+    "depart_time": 2948.271283318008,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_99",
+    "origin_edge": "60",
+    "destination_edge": "38",
+    "depart_time": 2951.9957049338973,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_245",
+    "origin_edge": "10",
+    "destination_edge": "29",
+    "depart_time": 2973.7797304886953,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_60",
+    "origin_edge": "87",
+    "destination_edge": "71",
+    "depart_time": 2978.503472955234,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_29",
+    "origin_edge": "85",
+    "destination_edge": "59",
+    "depart_time": 2992.0472342629173,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_210",
+    "origin_edge": "65",
+    "destination_edge": "4",
+    "depart_time": 2992.7936616045067,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_9",
+    "origin_edge": "60",
+    "destination_edge": "26",
+    "depart_time": 3004.902243243018,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_140",
+    "origin_edge": "67",
+    "destination_edge": "21",
+    "depart_time": 3006.0159891883777,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_88",
+    "origin_edge": "95",
+    "destination_edge": "68",
+    "depart_time": 3006.1452692473854,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_113",
+    "origin_edge": "70",
+    "destination_edge": "76",
+    "depart_time": 3015.998103522873,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_54",
+    "origin_edge": "65",
+    "destination_edge": "17",
+    "depart_time": 3030.2927524874817,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_174",
+    "origin_edge": "45",
+    "destination_edge": "37",
+    "depart_time": 3044.432192936206,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_267",
+    "origin_edge": "3",
+    "destination_edge": "43",
+    "depart_time": 3045.4009377102357,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_79",
+    "origin_edge": "19",
+    "destination_edge": "15",
+    "depart_time": 3046.4026359165337,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_119",
+    "origin_edge": "9",
+    "destination_edge": "84",
+    "depart_time": 3048.471839470266,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_235",
+    "origin_edge": "80",
+    "destination_edge": "8",
+    "depart_time": 3060.3543044966086,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_208",
+    "origin_edge": "40",
+    "destination_edge": "68",
+    "depart_time": 3077.83773875138,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_35",
+    "origin_edge": "10",
+    "destination_edge": "94",
+    "depart_time": 3078.1228443057907,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_102",
+    "origin_edge": "82",
+    "destination_edge": "80",
+    "depart_time": 3109.360783269347,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_177",
+    "origin_edge": "81",
+    "destination_edge": "7",
+    "depart_time": 3132.939666616936,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "emergency_3",
+    "origin_edge": "39",
+    "destination_edge": "28",
+    "depart_time": 3143.266584623619,
+    "vehicle_type": "emergency"
+  },
+  {
+    "id": "vehicle_107",
+    "origin_edge": "18",
+    "destination_edge": "57",
+    "depart_time": 3162.90031190316,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_120",
+    "origin_edge": "66",
+    "destination_edge": "6",
+    "depart_time": 3172.365595005073,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_182",
+    "origin_edge": "30",
+    "destination_edge": "86",
+    "depart_time": 3210.638863162535,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_95",
+    "origin_edge": "51",
+    "destination_edge": "33",
+    "depart_time": 3219.7440538922565,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_236",
+    "origin_edge": "74",
+    "destination_edge": "7",
+    "depart_time": 3228.452666091371,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_185",
+    "origin_edge": "3",
+    "destination_edge": "20",
+    "depart_time": 3236.0514511297315,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_76",
+    "origin_edge": "74",
+    "destination_edge": "37",
+    "depart_time": 3249.2727188445638,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_137",
+    "origin_edge": "83",
+    "destination_edge": "63",
+    "depart_time": 3265.22040999973,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_139",
+    "origin_edge": "70",
+    "destination_edge": "91",
+    "depart_time": 3270.1446757048334,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_221",
+    "origin_edge": "34",
+    "destination_edge": "70",
+    "depart_time": 3281.51477218915,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_85",
+    "origin_edge": "79",
+    "destination_edge": "86",
+    "depart_time": 3319.3607633296,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_159",
+    "origin_edge": "70",
+    "destination_edge": "56",
+    "depart_time": 3326.3960156521803,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_233",
+    "origin_edge": "47",
+    "destination_edge": "48",
+    "depart_time": 3378.52468091129,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_274",
+    "origin_edge": "89",
+    "destination_edge": "62",
+    "depart_time": 3383.438465731814,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_0",
+    "origin_edge": "25",
+    "destination_edge": "18",
+    "depart_time": 3414.784099692698,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_206",
+    "origin_edge": "78",
+    "destination_edge": "54",
+    "depart_time": 3426.5479824681215,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_52",
+    "origin_edge": "26",
+    "destination_edge": "60",
+    "depart_time": 3426.9857945965964,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_130",
+    "origin_edge": "32",
+    "destination_edge": "55",
+    "depart_time": 3481.1230078510093,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_77",
+    "origin_edge": "50",
+    "destination_edge": "12",
+    "depart_time": 3510.5449056981424,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_104",
+    "origin_edge": "81",
+    "destination_edge": "20",
+    "depart_time": 3521.780382793355,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_78",
+    "origin_edge": "49",
+    "destination_edge": "92",
+    "depart_time": 3524.3589483210408,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_7",
+    "origin_edge": "66",
+    "destination_edge": "13",
+    "depart_time": 3530.847911094061,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_260",
+    "origin_edge": "14",
+    "destination_edge": "95",
+    "depart_time": 3542.7274123208863,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_149",
+    "origin_edge": "23",
+    "destination_edge": "89",
+    "depart_time": 3554.3798484303325,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_161",
+    "origin_edge": "32",
+    "destination_edge": "48",
+    "depart_time": 3569.1306693480665,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_282",
+    "origin_edge": "90",
+    "destination_edge": "39",
+    "depart_time": 3572.853210251904,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_115",
+    "origin_edge": "34",
+    "destination_edge": "95",
+    "depart_time": 3580.2984815211153,
+    "vehicle_type": "normal"
+  },
+  {
+    "id": "vehicle_61",
+    "origin_edge": "40",
+    "destination_edge": "56",
+    "depart_time": 3598.034523932063,
+    "vehicle_type": "normal"
+  }
+]

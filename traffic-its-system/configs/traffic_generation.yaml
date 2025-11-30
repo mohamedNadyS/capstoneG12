@@ -1,0 +1,87 @@
+# ============================================================================
+# Traffic Generation Configuration
+# Controls synthetic traffic data generation
+# ============================================================================
+
+generation:
+  # Default number of vehicles to generate
+  # Network capacity: ~190,000 veh/hour (~3,166 veh/min)
+  default_num_vehicles: 1200
+  
+  # Congestion level: 0.0 = free flow, 1.0 = completely jammed
+  default_congestion_level: 0.3
+  
+  # Percentage of emergency vehicles (0.0 - 1.0)
+  emergency_vehicle_ratio: 0.05  # 5% are emergency vehicles
+  
+  # Scenario types with different parameters
+  # Based on network analysis:
+  # - 33 junctions, 95 edges
+  # - Total length: 1.68 km (small urban network)
+  # - All single-lane roads
+  # - Average speed limit: 51.1 km/h
+  scenarios:
+    free_flow:
+      congestion_level: 0.1
+      num_vehicles: 550          # ~15% capacity (light traffic)
+      speed_variance: 5.0        # km/h
+      
+    normal:
+      congestion_level: 0.3
+      num_vehicles: 1200         # ~35% capacity (normal traffic)
+      speed_variance: 8.0
+      
+    rush_hour:
+      congestion_level: 0.6
+      num_vehicles: 2150         # ~65% capacity (heavy traffic)
+      speed_variance: 12.0
+      
+    heavy_jam:
+      congestion_level: 0.9
+      num_vehicles: 2800         # ~85% capacity (severe congestion)
+      speed_variance: 15.0
+
+speed_generation:
+  # Base speed limits by road type
+  # Note: Your network has all 1-lane roads with avg speed ~51 km/h
+  default_speeds:
+    highway: 90.0      # km/h (not present in this network)
+    primary: 60.0      # km/h
+    secondary: 50.0    # km/h (matches your network average)
+    residential: 30.0  # km/h
+    default: 50.0      # km/h (your network average: 51.1 km/h)
+  
+  # Historical data generation
+  history_timesteps: 12  # 12 * 5min = 1 hour
+  timestep_minutes: 5
+  
+  # Speed variation parameters (adjusted for single-lane roads)
+  noise_std: 4.0  # Increased for more realistic single-lane variance
+  min_speed_factor: 0.1  # Minimum speed = 10% of limit (jam)
+  max_speed_factor: 1.0  # Maximum speed = 100% of limit
+  
+  # Congestion propagation (higher for single-lane roads)
+  propagation_factor: 0.8  # Single-lane roads propagate congestion more
+  temporal_smoothing: 0.75  # Slightly less smooth for urban conditions
+
+vehicle_distribution:
+  # How to distribute vehicles across the network
+  origin_selection: "weighted_random"  # random, weighted_random, hotspots
+  destination_selection: "weighted_random"
+  
+  # Hotspot zones (higher probability origin/destination)
+  hotspot_probability: 0.4  # 40% of vehicles from/to hotspots
+  num_hotspots: 5
+  
+departure_times:
+  # When vehicles start their trips
+  start_time: 0.0  # seconds
+  end_time: 3600.0  # 1 hour
+  distribution: "uniform"  # uniform, rush_hour_peak, random
+
+validation:
+  # Data validation thresholds
+  max_speed: 150.0  # km/h (unrealistic above this)
+  min_speed: 0.0    # km/h
+  max_congestion: 1.0
+  min_congestion: 0.0
