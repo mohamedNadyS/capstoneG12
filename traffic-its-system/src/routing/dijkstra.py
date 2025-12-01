@@ -110,17 +110,50 @@ class DijkstraRouter:
                 if neighbor in visited:
                     continue
                 
-                # Get edge data
-                edge_data = self.graph[current_node][neighbor]
-                edge_id = edge_data.get('edge_id', f"{current_node}-{neighbor}")
+                # Get all edges between current_node and neighbor (MultiDiGraph)
+                edges_between = self.graph[current_node][neighbor]
                 
-                # Skip if avoiding this edge
-                if edge_id in avoid_edges:
+                # Find best edge among parallel edges
+                best_edge_id = None
+                best_edge_data = None
+                best_cost = float('inf')
+                
+                for edge_key, edge_data in edges_between.items():
+                    # edge_key IS the edge_id now!
+                    edge_id = str(edge_key)
+                    
+                    # Skip if avoiding this edge
+                    if edge_id in avoid_edges:
+                        continue
+                    
+                    # Calculate edge cost
+                    base_cost = edge_data.get('weight', 1.0)
+                    
+                    if emergency:
+                        # Emergency vehicles: ignore congestion, slight safety consideration
+                        safety = edge_data.get('safety', 0.7)
+                        edge_cost = base_cost * (1.5 - safety * 0.5)
+                    else:
+                        # Normal vehicles: consider congestion and safety
+                        congestion = edge_data.get('congestion', 0.0)
+                        safety = edge_data.get('safety', 0.5)
+                        edge_cost = base_cost * (1.0 + congestion) * (2.0 - safety)
+                    
+                    # Keep track of best edge
+                    if edge_cost < best_cost:
+                        best_cost = edge_cost
+                        best_edge_id = edge_id
+                        best_edge_data = edge_data
+                
+                # Skip if no valid edge found
+                if best_edge_id is None:
                     continue
                 
-                # Calculate edge cost
-                base_cost = edge_data.get('weight', 1.0)
+                edge_id = best_edge_id
+                edge_data = best_edge_data
+                base_cost = edge_data.get('weight', 1.0)  # Need this for calculations below
                 
+                # Calculate final edge cost based on vehicle type
                 if emergency:
                     # Emergency vehicles
                     if ignore_congestion:
@@ -254,8 +287,17 @@ class DijkstraRouter:
             visited.add(current_node)
             
             for neighbor in self.graph.successors(current_node):
-                edge_data = self.graph[current_node][neighbor]
-                edge_cost = edge_data.get('weight', 1.0)
+                # Get all edges between nodes (MultiDiGraph)
+                edges_between = self.graph[current_node][neighbor]
+                
+                # Find edge with minimum weight
+                min_weight = float('inf')
+                for edge_key, edge_data in edges_between.items():
+                    weight = edge_data.get('weight', 1.0)
+                    if weight < min_weight:
+                        min_weight = weight
+                
+                edge_cost = min_weight if min_weight != float('inf') else 1.0
                 
                 tentative_distance = distances[current_node] + edge_cost
                 

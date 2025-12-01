@@ -1,667 +1,667 @@
 {
   "1": {
     "edge_id": "1",
-    "vehicle_count": 12,
-    "current_speed": 28.002239999999993,
+    "vehicle_count": 22,
+    "current_speed": 10.000799999999998,
     "capacity": 2000,
-    "congestion_factor": 0.8
+    "congestion_factor": 1.0
   },
   "10": {
     "edge_id": "10",
-    "vehicle_count": 7,
-    "current_speed": 25.252019999999998,
+    "vehicle_count": 33,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.55
+    "congestion_factor": 1.0
   },
   "11": {
     "edge_id": "11",
-    "vehicle_count": 20,
+    "vehicle_count": 30,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "12": {
     "edge_id": "12",
-    "vehicle_count": 21,
+    "vehicle_count": 25,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "13": {
     "edge_id": "13",
-    "vehicle_count": 15,
-    "current_speed": 7.250580000000002,
+    "vehicle_count": 30,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "14": {
     "edge_id": "14",
-    "vehicle_count": 22,
+    "vehicle_count": 24,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "15": {
     "edge_id": "15",
-    "vehicle_count": 21,
+    "vehicle_count": 28,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "16": {
     "edge_id": "16",
-    "vehicle_count": 13,
-    "current_speed": 11.750939999999995,
+    "vehicle_count": 27,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "17": {
     "edge_id": "17",
-    "vehicle_count": 17,
+    "vehicle_count": 42,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "18": {
     "edge_id": "18",
-    "vehicle_count": 10,
-    "current_speed": 18.50148,
+    "vehicle_count": 31,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.7
+    "congestion_factor": 1.0
   },
   "19": {
     "edge_id": "19",
-    "vehicle_count": 20,
+    "vehicle_count": 37,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "2": {
     "edge_id": "2",
-    "vehicle_count": 6,
-    "current_speed": 55.00440000000001,
+    "vehicle_count": 39,
+    "current_speed": 10.000799999999998,
     "capacity": 2000,
-    "congestion_factor": 0.5
+    "congestion_factor": 1.0
   },
   "20": {
     "edge_id": "20",
-    "vehicle_count": 14,
-    "current_speed": 9.500760000000003,
+    "vehicle_count": 24,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8999999999999999
+    "congestion_factor": 1.0
   },
   "21": {
     "edge_id": "21",
-    "vehicle_count": 14,
-    "current_speed": 9.500760000000003,
+    "vehicle_count": 28,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8999999999999999
+    "congestion_factor": 1.0
   },
   "22": {
     "edge_id": "22",
-    "vehicle_count": 15,
-    "current_speed": 7.250580000000002,
+    "vehicle_count": 17,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "23": {
     "edge_id": "23",
-    "vehicle_count": 21,
+    "vehicle_count": 36,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "24": {
     "edge_id": "24",
-    "vehicle_count": 16,
+    "vehicle_count": 35,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "25": {
     "edge_id": "25",
-    "vehicle_count": 16,
+    "vehicle_count": 23,
     "current_speed": 5.0,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "26": {
     "edge_id": "26",
-    "vehicle_count": 20,
+    "vehicle_count": 21,
     "current_speed": 5.0,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "27": {
     "edge_id": "27",
-    "vehicle_count": 13,
+    "vehicle_count": 30,
     "current_speed": 5.0,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "28": {
     "edge_id": "28",
-    "vehicle_count": 13,
+    "vehicle_count": 23,
     "current_speed": 5.0,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "29": {
     "edge_id": "29",
-    "vehicle_count": 16,
+    "vehicle_count": 32,
     "current_speed": 5.0,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "3": {
     "edge_id": "3",
-    "vehicle_count": 18,
+    "vehicle_count": 36,
     "current_speed": 10.000799999999998,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "30": {
     "edge_id": "30",
-    "vehicle_count": 15,
+    "vehicle_count": 25,
     "current_speed": 5.0,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "31": {
     "edge_id": "31",
-    "vehicle_count": 19,
+    "vehicle_count": 32,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "32": {
     "edge_id": "32",
-    "vehicle_count": 15,
-    "current_speed": 7.250580000000002,
+    "vehicle_count": 32,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "33": {
     "edge_id": "33",
-    "vehicle_count": 23,
+    "vehicle_count": 22,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "34": {
     "edge_id": "34",
-    "vehicle_count": 19,
+    "vehicle_count": 44,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "35": {
     "edge_id": "35",
-    "vehicle_count": 16,
+    "vehicle_count": 33,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "36": {
     "edge_id": "36",
-    "vehicle_count": 16,
+    "vehicle_count": 27,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "37": {
     "edge_id": "37",
-    "vehicle_count": 15,
-    "current_speed": 7.250580000000002,
+    "vehicle_count": 30,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "38": {
     "edge_id": "38",
-    "vehicle_count": 20,
+    "vehicle_count": 24,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "39": {
     "edge_id": "39",
-    "vehicle_count": 13,
-    "current_speed": 11.750939999999995,
+    "vehicle_count": 34,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "4": {
     "edge_id": "4",
-    "vehicle_count": 15,
-    "current_speed": 14.501160000000004,
+    "vehicle_count": 34,
+    "current_speed": 10.000799999999998,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "40": {
     "edge_id": "40",
-    "vehicle_count": 17,
+    "vehicle_count": 38,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "41": {
     "edge_id": "41",
-    "vehicle_count": 13,
-    "current_speed": 11.750939999999995,
+    "vehicle_count": 33,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "42": {
     "edge_id": "42",
-    "vehicle_count": 20,
+    "vehicle_count": 32,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "43": {
     "edge_id": "43",
-    "vehicle_count": 17,
+    "vehicle_count": 23,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "44": {
     "edge_id": "44",
-    "vehicle_count": 18,
+    "vehicle_count": 22,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "45": {
     "edge_id": "45",
-    "vehicle_count": 15,
-    "current_speed": 7.250580000000002,
+    "vehicle_count": 26,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "46": {
     "edge_id": "46",
-    "vehicle_count": 16,
+    "vehicle_count": 37,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "47": {
     "edge_id": "47",
-    "vehicle_count": 9,
-    "current_speed": 20.751659999999998,
+    "vehicle_count": 40,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.65
+    "congestion_factor": 1.0
   },
   "48": {
     "edge_id": "48",
-    "vehicle_count": 10,
-    "current_speed": 18.50148,
+    "vehicle_count": 30,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.7
+    "congestion_factor": 1.0
   },
   "49": {
     "edge_id": "49",
-    "vehicle_count": 16,
+    "vehicle_count": 30,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "5": {
     "edge_id": "5",
-    "vehicle_count": 19,
+    "vehicle_count": 26,
     "current_speed": 10.000799999999998,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "50": {
     "edge_id": "50",
-    "vehicle_count": 23,
+    "vehicle_count": 29,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "51": {
     "edge_id": "51",
-    "vehicle_count": 17,
+    "vehicle_count": 26,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "52": {
     "edge_id": "52",
-    "vehicle_count": 17,
+    "vehicle_count": 34,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "53": {
     "edge_id": "53",
-    "vehicle_count": 8,
-    "current_speed": 23.001839999999994,
+    "vehicle_count": 29,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.6000000000000001
+    "congestion_factor": 1.0
   },
   "54": {
     "edge_id": "54",
-    "vehicle_count": 18,
+    "vehicle_count": 34,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "55": {
     "edge_id": "55",
-    "vehicle_count": 12,
-    "current_speed": 14.001119999999997,
+    "vehicle_count": 31,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8
+    "congestion_factor": 1.0
   },
   "56": {
     "edge_id": "56",
-    "vehicle_count": 15,
-    "current_speed": 7.250580000000002,
+    "vehicle_count": 21,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "57": {
     "edge_id": "57",
-    "vehicle_count": 10,
-    "current_speed": 18.50148,
+    "vehicle_count": 21,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.7
+    "congestion_factor": 1.0
   },
   "58": {
     "edge_id": "58",
-    "vehicle_count": 16,
+    "vehicle_count": 33,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "59": {
     "edge_id": "59",
-    "vehicle_count": 20,
+    "vehicle_count": 30,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "6": {
     "edge_id": "6",
-    "vehicle_count": 12,
-    "current_speed": 28.002239999999993,
+    "vehicle_count": 38,
+    "current_speed": 10.000799999999998,
     "capacity": 2000,
-    "congestion_factor": 0.8
+    "congestion_factor": 1.0
   },
   "60": {
     "edge_id": "60",
-    "vehicle_count": 14,
-    "current_speed": 9.500760000000003,
+    "vehicle_count": 26,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8999999999999999
+    "congestion_factor": 1.0
   },
   "61": {
     "edge_id": "61",
-    "vehicle_count": 22,
+    "vehicle_count": 30,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "62": {
     "edge_id": "62",
-    "vehicle_count": 17,
+    "vehicle_count": 24,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "63": {
     "edge_id": "63",
-    "vehicle_count": 17,
+    "vehicle_count": 30,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "64": {
     "edge_id": "64",
-    "vehicle_count": 14,
-    "current_speed": 9.500760000000003,
+    "vehicle_count": 30,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8999999999999999
+    "congestion_factor": 1.0
   },
   "65": {
     "edge_id": "65",
-    "vehicle_count": 15,
+    "vehicle_count": 20,
     "current_speed": 5.0,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "66": {
     "edge_id": "66",
-    "vehicle_count": 15,
+    "vehicle_count": 27,
     "current_speed": 5.0,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "67": {
     "edge_id": "67",
-    "vehicle_count": 13,
+    "vehicle_count": 27,
     "current_speed": 5.0,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "68": {
     "edge_id": "68",
-    "vehicle_count": 12,
-    "current_speed": 5.604479999999998,
+    "vehicle_count": 38,
+    "current_speed": 5.0,
     "capacity": 2000,
-    "congestion_factor": 0.8
+    "congestion_factor": 1.0
   },
   "69": {
     "edge_id": "69",
-    "vehicle_count": 17,
+    "vehicle_count": 22,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "7": {
     "edge_id": "7",
-    "vehicle_count": 16,
+    "vehicle_count": 32,
     "current_speed": 10.000799999999998,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "70": {
     "edge_id": "70",
-    "vehicle_count": 17,
+    "vehicle_count": 34,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "71": {
     "edge_id": "71",
-    "vehicle_count": 14,
-    "current_speed": 9.500760000000003,
+    "vehicle_count": 25,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8999999999999999
+    "congestion_factor": 1.0
   },
   "72": {
     "edge_id": "72",
-    "vehicle_count": 20,
+    "vehicle_count": 28,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "73": {
     "edge_id": "73",
-    "vehicle_count": 18,
+    "vehicle_count": 30,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "74": {
     "edge_id": "74",
-    "vehicle_count": 23,
+    "vehicle_count": 38,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "75": {
     "edge_id": "75",
-    "vehicle_count": 17,
+    "vehicle_count": 34,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "76": {
     "edge_id": "76",
-    "vehicle_count": 14,
-    "current_speed": 9.500760000000003,
+    "vehicle_count": 28,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8999999999999999
+    "congestion_factor": 1.0
   },
   "77": {
     "edge_id": "77",
-    "vehicle_count": 13,
-    "current_speed": 11.750939999999995,
+    "vehicle_count": 26,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "78": {
     "edge_id": "78",
-    "vehicle_count": 21,
+    "vehicle_count": 35,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "79": {
     "edge_id": "79",
-    "vehicle_count": 13,
-    "current_speed": 11.750939999999995,
+    "vehicle_count": 33,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "8": {
     "edge_id": "8",
-    "vehicle_count": 22,
+    "vehicle_count": 24,
     "current_speed": 10.000799999999998,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "80": {
     "edge_id": "80",
-    "vehicle_count": 13,
-    "current_speed": 11.750939999999995,
+    "vehicle_count": 39,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "81": {
     "edge_id": "81",
-    "vehicle_count": 13,
-    "current_speed": 11.750939999999995,
+    "vehicle_count": 21,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8500000000000001
+    "congestion_factor": 1.0
   },
   "82": {
     "edge_id": "82",
-    "vehicle_count": 14,
-    "current_speed": 9.500760000000003,
+    "vehicle_count": 24,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8999999999999999
+    "congestion_factor": 1.0
   },
   "83": {
     "edge_id": "83",
-    "vehicle_count": 11,
-    "current_speed": 16.2513,
+    "vehicle_count": 28,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.75
+    "congestion_factor": 1.0
   },
   "84": {
     "edge_id": "84",
-    "vehicle_count": 22,
+    "vehicle_count": 33,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "85": {
     "edge_id": "85",
-    "vehicle_count": 15,
-    "current_speed": 7.250580000000002,
+    "vehicle_count": 31,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.95
+    "congestion_factor": 1.0
   },
   "86": {
     "edge_id": "86",
-    "vehicle_count": 18,
+    "vehicle_count": 31,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "87": {
     "edge_id": "87",
-    "vehicle_count": 16,
+    "vehicle_count": 26,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "88": {
     "edge_id": "88",
-    "vehicle_count": 14,
-    "current_speed": 9.500760000000003,
+    "vehicle_count": 29,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8999999999999999
+    "congestion_factor": 1.0
   },
   "89": {
     "edge_id": "89",
-    "vehicle_count": 16,
+    "vehicle_count": 17,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "9": {
     "edge_id": "9",
-    "vehicle_count": 8,
-    "current_speed": 23.001839999999994,
+    "vehicle_count": 23,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.6000000000000001
+    "congestion_factor": 1.0
   },
   "90": {
     "edge_id": "90",
-    "vehicle_count": 14,
-    "current_speed": 9.500760000000003,
+    "vehicle_count": 30,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.8999999999999999
+    "congestion_factor": 1.0
   },
   "91": {
     "edge_id": "91",
-    "vehicle_count": 17,
+    "vehicle_count": 29,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "92": {
     "edge_id": "92",
-    "vehicle_count": 16,
+    "vehicle_count": 20,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "93": {
     "edge_id": "93",
-    "vehicle_count": 18,
+    "vehicle_count": 34,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "94": {
     "edge_id": "94",
-    "vehicle_count": 16,
+    "vehicle_count": 29,
     "current_speed": 5.000399999999999,
     "capacity": 2000,
     "congestion_factor": 1.0
   },
   "95": {
     "edge_id": "95",
-    "vehicle_count": 11,
-    "current_speed": 16.2513,
+    "vehicle_count": 42,
+    "current_speed": 5.000399999999999,
     "capacity": 2000,
-    "congestion_factor": 0.75
+    "congestion_factor": 1.0
   }
 }

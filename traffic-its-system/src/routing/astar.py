@@ -170,26 +170,48 @@ class AStarRouter:
                 if neighbor in closed_set:
                     continue
                 
-                # Get edge data
-                edge_data = self.graph[current_node][neighbor]
-                edge_id = edge_data.get('edge_id', f"{current_node}-{neighbor}")
+                # Get all edges between current_node and neighbor (MultiDiGraph)
+                edges_between = self.graph[current_node][neighbor]
                 
-                # Skip if avoiding this edge
-                if edge_id in avoid_edges:
+                # Find best edge among parallel edges (lowest cost)
+                best_edge_id = None
+                best_edge_data = None
+                best_cost = float('inf')
+                
+                for edge_key, edge_data in edges_between.items():
+                    # edge_key IS the edge_id now!
+                    edge_id = str(edge_key)
+                    
+                    # Skip if avoiding this edge
+                    if edge_id in avoid_edges:
+                        continue
+                    
+                    # Calculate cost for this edge
+                    if cost_function == 'time':
+                        edge_cost = edge_data.get('weight', 1.0)
+                    elif cost_function == 'safety':
+                        base_cost = edge_data.get('weight', 1.0)
+                        safety = edge_data.get('safety', 0.5)
+                        edge_cost = base_cost * (2.0 - safety)
+                    else:  # balanced
+                        base_cost = edge_data.get('weight', 1.0)
+                        safety = edge_data.get('safety', 0.5)
+                        congestion = edge_data.get('congestion', 0.0)
+                        edge_cost = base_cost * (1.0 + congestion * 0.5) * (2.0 - safety)
+                    
+                    # Keep track of best edge
+                    if edge_cost < best_cost:
+                        best_cost = edge_cost
+                        best_edge_id = edge_id
+                        best_edge_data = edge_data
+                
+                # Skip if no valid edge found
+                if best_edge_id is None:
                     continue
                 
-                # Get edge cost
-                if cost_function == 'time':
-                    edge_cost = edge_data.get('weight', 1.0)
-                elif cost_function == 'safety':
-                    base_cost = edge_data.get('weight', 1.0)
-                    safety = edge_data.get('safety', 0.5)
-                    edge_cost = base_cost * (2.0 - safety)
-                else:  # balanced
-                    base_cost = edge_data.get('weight', 1.0)
-                    safety = edge_data.get('safety', 0.5)
-                    congestion = edge_data.get('congestion', 0.0)
-                    edge_cost = base_cost * (1.0 + congestion * 0.5) * (2.0 - safety)
+                edge_id = best_edge_id
+                edge_data = best_edge_data
+                edge_cost = best_cost  # Already calculated above
                 
                 # Calculate tentative g_cost
                 tentative_g = g_costs[current_node] + edge_cost

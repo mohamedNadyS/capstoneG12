@@ -64,7 +64,8 @@ class RoutingGraphBuilder:
         """
         print(f"\n[GRAPH] Building routing graph...")
         
-        self.graph = nx.DiGraph()
+        # Use MultiDiGraph to handle multiple edges between same node pairs
+        self.graph = nx.MultiDiGraph()
         
         # Add nodes (junctions) with positions
         for node_id, sumo_node in self.sumo_network.nodes.items():
@@ -129,10 +130,11 @@ class RoutingGraphBuilder:
                 safety_score=safety_score
             )
             
-            # Add to graph
+            # Add to graph - use edge_id as key for MultiDiGraph
             self.graph.add_edge(
                 sumo_edge.from_node,
                 sumo_edge.to_node,
+                key=edge_id,  # Use edge_id as the key!
                 edge_id=edge_id,
                 weight=travel_time,  # Used by routing algorithms
                 length=sumo_edge.length,

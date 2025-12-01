@@ -10,7 +10,7 @@ system:
 
 paths:
   data_dir: "./data"
-  sumo_dir: "./data/sumo"
+  sumo_dir: "./data/generated"
   generated_dir: "./data/generated"
   models_dir: "./models/trained"
   outputs_dir: "./outputs"
