@@ -58,7 +58,7 @@ def create_comparison_charts(comparison_file, vehicle_comparisons_file, output_d
     print(f"\n[2/4] Creating travel time comparisons...")
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
     
-    emergency_travel = [9.7,7.5]
+    emergency_travel = [emergency_avg['baseline_travel'], emergency_avg['ai_travel']]
     bars1 = ax1.bar(approaches, emergency_travel, color=colors, alpha=0.8, edgecolor='black', linewidth=2)
     
     for bar in bars1:
@@ -79,7 +79,7 @@ def create_comparison_charts(comparison_file, vehicle_comparisons_file, output_d
     ax1.set_title('🚨 Emergency Vehicle Travel Time', fontsize=15, fontweight='bold')
     ax1.grid(axis='y', alpha=0.3)
     
-    normal_travel = [18.4,16.5]
+    normal_travel = [normal_avg['baseline_travel'], normal_avg['ai_travel']]
     bars2 = ax2.bar(approaches, normal_travel, color=colors, alpha=0.8, edgecolor='black', linewidth=2)
     
     for bar in bars2:
@@ -108,7 +108,7 @@ def create_comparison_charts(comparison_file, vehicle_comparisons_file, output_d
     print(f"\n[3/4] Creating pollution comparison...")
     fig, ax = plt.subplots(figsize=(10, 6))
     
-    pollution_values = [49.7, 43.6]
+    pollution_values = [baseline_pollution, ai_pollution]
     
     if pollution_values[0] > 0:
         bars = ax.bar(approaches, pollution_values, color=colors, alpha=0.8, edgecolor='black', linewidth=2)
@@ -118,7 +118,7 @@ def create_comparison_charts(comparison_file, vehicle_comparisons_file, output_d
             ax.text(bar.get_x() + bar.get_width()/2., height,
                     f'{height:.1f}g', ha='center', va='bottom', fontsize=14, fontweight='bold')
         
-        improvement = (12.3)
+        improvement = data.get('pollution', {}).get('improvement', 0)
         ax.text(0.5, max(pollution_values) * 0.9,
                f'Reduction: {improvement:+.1f}%',
                ha='center', transform=ax.transData,
@@ -173,9 +173,9 @@ def create_comparison_charts(comparison_file, vehicle_comparisons_file, output_d
         poll = data.get('pollution', {})
         
         improvements = [
-            22.2,
-            10.2,
-            12.3,
+            emerg.get('ai_travel_improvement', 0),
+            norm.get('ai_travel_improvement', 0),
+            poll.get('improvement', 0),
         ]
         
         labels = ['Emergency\nTravel Time', 'Normal\nTravel Time', 'Overall\nPollution']

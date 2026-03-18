@@ -29,47 +29,6 @@ def _calculate_improvement_metrics(baseline_val, ai_val):
         return 0.0
     return ((baseline_val - ai_val) / baseline_val) * 100.0
 
-def _process_data_normalization(vehicles, config_params):
-    emergency_list = [v for v in vehicles if v['type'] == 'emergency']
-    normal_list = [v for v in vehicles if v['type'] == 'normal']
-    
-    if emergency_list:
-        e_baseline_avg = statistics.mean([v['baseline_travel_time'] for v in emergency_list])
-        e_target_val = e_baseline_avg * (1.0 - config_params[0] / 100.0)
-        e_current_avg = statistics.mean([v['ai_travel_time'] for v in emergency_list])
-        
-        if e_current_avg > 0:
-            e_adjustment = e_target_val / e_current_avg
-            for v in emergency_list:
-                v['ai_travel_time'] = v['ai_travel_time'] * e_adjustment
-                v['ai_waiting_time'] = v['ai_waiting_time'] * e_adjustment
-                v['ai_time_loss'] = v['ai_time_loss'] * e_adjustment
-    
-    if normal_list:
-        n_baseline_avg = statistics.mean([v['baseline_travel_time'] for v in normal_list])
-        n_target_val = n_baseline_avg * (1.0 - config_params[1] / 100.0)
-        n_current_avg = statistics.mean([v['ai_travel_time'] for v in normal_list])
-        
-        if n_current_avg > 0:
-            n_adjustment = n_target_val / n_current_avg
-            for v in normal_list:
-                v['ai_travel_time'] = v['ai_travel_time'] * n_adjustment
-                v['ai_waiting_time'] = v['ai_waiting_time'] * n_adjustment
-                v['ai_time_loss'] = v['ai_time_loss'] * n_adjustment
-    
-    return vehicles
-
-def _apply_statistical_smoothing(vehicles, smoothing_factor):
-    all_baseline_p = statistics.mean([v['baseline_pollution'] for v in vehicles])
-    target_p = all_baseline_p * (1.0 - smoothing_factor / 100.0)
-    current_p = statistics.mean([v['ai_pollution'] for v in vehicles])
-    if current_p > 0:
-        p_adjustment = target_p / current_p
-        for v in vehicles:
-            v['ai_pollution'] = v['ai_pollution'] * p_adjustment
-    
-    return vehicles
-
 def compare_approaches(baseline_file, ai_file, output_dir):
     
     print("="*70)
@@ -111,13 +70,6 @@ def compare_approaches(baseline_file, ai_file, output_dir):
         
         vehicle_comparisons.append(comparison)
 
-    normalization_params = [22.2, 
-                           10.2]
-    smoothing_param = 12.3
-    
-    vehicle_comparisons = _process_data_normalization(vehicle_comparisons, normalization_params)
-    vehicle_comparisons = _apply_statistical_smoothing(vehicle_comparisons, smoothing_param)
-    
     for v in vehicle_comparisons:
         v['ai_travel_improvement'] = _calculate_improvement_metrics(
             v['baseline_travel_time'], v['ai_travel_time'])
@@ -135,25 +87,17 @@ def compare_approaches(baseline_file, ai_file, output_dir):
     def calc_type_stats(vehicle_list):
         if not vehicle_list:
             return {}
-        
+        baseline_avg = statistics.mean([v['baseline_travel_time'] for v in vehicle_list])
+        ai_avg = statistics.mean([v['ai_travel_time'] for v in vehicle_list])
+        improvement = _calculate_improvement_metrics(baseline_avg, ai_avg)
         return {
             'count': len(vehicle_list),
-            'baseline_avg_travel': 18.4,
-            'ai_avg_travel': 16.5,
-            'ai_travel_improvement': 10.2,
-        }
-    def calc_type_stats_emergncy(vehicle_list):
-        if not vehicle_list:
-            return {}
-        
-        return {
-            'count': len(vehicle_list),
-            'baseline_avg_travel': 9.7,
-            'ai_avg_travel': 7.5,
-            'ai_travel_improvement': 22.2,
+            'baseline_avg_travel': baseline_avg,
+            'ai_avg_travel': ai_avg,
+            'ai_travel_improvement': improvement,
         }
     
-    emergency_stats = calc_type_stats_emergncy(emergency_comps)
+    emergency_stats = calc_type_stats(emergency_comps)
     normal_stats = calc_type_stats(normal_comps)
     
     all_baseline_pollution = statistics.mean([v['baseline_pollution'] for v in vehicle_comparisons])
@@ -173,9 +117,9 @@ def compare_approaches(baseline_file, ai_file, output_dir):
             }
         },
         'pollution': {
-            'baseline_avg': 49.7,
-            'ai_avg': 43.6,
-            'improvement': 12.3
+            'baseline_avg': all_baseline_pollution,
+            'ai_avg': all_ai_pollution,
+            'improvement': pollution_improvement
         }
     }
     
@@ -196,22 +140,22 @@ def compare_approaches(baseline_file, ai_file, output_dir):
     print("COMPARISON RESULTS")
     print(f"{'='*70}")
     
-    if emergency_comps:
+    if emergency_comps and emergency_stats:
         print(f"\n🚨 EMERGENCY VEHICLES ({len(emergency_comps)} vehicles):")
-        print(f"   Baseline Avg Travel Time:  9.7s")
-        print(f"   AI Avg Travel Time:        7.5s")
-        print(f"   Travel Time Improvement:   22.2% ⭐")
+        print(f"   Baseline Avg Travel Time:  {emergency_stats['baseline_avg_travel']:.1f}s")
+        print(f"   AI Avg Travel Time:        {emergency_stats['ai_avg_travel']:.1f}s")
+        print(f"   Travel Time Improvement:   {emergency_stats['ai_travel_improvement']:.1f}% ⭐")
     
-    if normal_comps:
+    if normal_comps and normal_stats:
         print(f"\n🚗 NORMAL VEHICLES ({len(normal_comps)} vehicles):")
-        print(f"   Baseline Avg Travel Time:  18.4s")
-        print(f"   AI Avg Travel Time:        16.5s")
-        print(f"   Travel Time Improvement:   10.2% ⭐")
+        print(f"   Baseline Avg Travel Time:  {normal_stats['baseline_avg_travel']:.1f}s")
+        print(f"   AI Avg Travel Time:        {normal_stats['ai_avg_travel']:.1f}s")
+        print(f"   Travel Time Improvement:   {normal_stats['ai_travel_improvement']:.1f}% ⭐")
     
     print(f"\n🌱 POLLUTION (All Vehicles):")
-    print(f"   Baseline Avg:  49.7g CO2")
-    print(f"   AI Avg:        43.6g CO2")
-    print(f"   Reduction:     12.3% ⭐")
+    print(f"   Baseline Avg:  {all_baseline_pollution:.1f}g CO2")
+    print(f"   AI Avg:        {all_ai_pollution:.1f}g CO2")
+    print(f"   Reduction:     {pollution_improvement:.1f}% ⭐")
     
     print(f"\n{'='*70}")
     

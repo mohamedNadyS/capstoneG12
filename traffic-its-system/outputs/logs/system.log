@@ -9353,3 +9353,156 @@ Configuration:
 2026-03-18 23:06:37,495 | Routing | INFO     |    1. Run SUMO-GUI: sumo-gui -c data/comparison/simulation.sumocfg
 2026-03-18 23:06:37,495 | Routing | INFO     |    2. Or use script: python scripts/4_run_sumo_gui.py --config data/comparison/simulation.sumocfg
 2026-03-18 23:06:37,495 | Routing | INFO     | 
+2026-03-18 23:30:43,881 | TrafficGen | INFO     | ======================================================================
+2026-03-18 23:30:43,882 | TrafficGen | INFO     | ITS TRAFFIC GENERATION
+2026-03-18 23:30:43,882 | TrafficGen | INFO     | ======================================================================
+2026-03-18 23:30:43,882 | TrafficGen | INFO     | Network file: ./data/generated/map.net.xml
+2026-03-18 23:30:43,882 | TrafficGen | INFO     | Output directory: data/comparison
+2026-03-18 23:30:43,882 | TrafficGen | INFO     | 
+2026-03-18 23:30:43,882 | TrafficGen | INFO     | [Step 1/3] Parsing SUMO network...
+2026-03-18 23:30:43,890 | TrafficGen | INFO     | [Step 2/3] Initializing traffic generator...
+2026-03-18 23:30:43,891 | TrafficGen | INFO     | [Step 3/3] Generating traffic scenario...
+2026-03-18 23:30:43,891 | TrafficGen | INFO     | 
+2026-03-18 23:30:43,976 | TrafficGen | INFO     | 📊 Scenario Summary:
+2026-03-18 23:30:43,976 | TrafficGen | INFO     |    • Vehicles: 2000
+2026-03-18 23:30:43,976 | TrafficGen | INFO     |    • Edges with traffic: 95
+2026-03-18 23:30:43,977 | TrafficGen | INFO     |    • Speed history timesteps: 12
+2026-03-18 23:30:43,977 | TrafficGen | INFO     | 
+2026-03-18 23:30:43,977 | TrafficGen | INFO     | ✅ Traffic generation completed successfully!
+2026-03-18 23:30:43,977 | TrafficGen | INFO     | 
+2026-03-18 23:30:43,977 | TrafficGen | INFO     | Next steps:
+2026-03-18 23:30:43,977 | TrafficGen | INFO     |   1. Run GNN prediction: python scripts/2_run_prediction.py
+2026-03-18 23:30:43,977 | TrafficGen | INFO     |   2. Generate routes: python scripts/3_generate_routes.py
+2026-03-18 23:30:43,977 | TrafficGen | INFO     |   3. Run SUMO simulation: python scripts/4_run_sumo_gui.py
+2026-03-18 23:30:43,977 | TrafficGen | INFO     | 
+2026-03-18 23:30:47,576 | Prediction | INFO     | ======================================================================
+2026-03-18 23:30:47,576 | Prediction | INFO     | ITS TRAFFIC SPEED PREDICTION
+2026-03-18 23:30:47,576 | Prediction | INFO     | ======================================================================
+2026-03-18 23:30:47,577 | Prediction | INFO     | 
+📂 Configuration:
+2026-03-18 23:30:47,577 | Prediction | INFO     |    Scenario: data/comparison
+2026-03-18 23:30:47,577 | Prediction | INFO     |    Model: models/trained/gat_metrla_best.pth
+2026-03-18 23:30:47,577 | Prediction | INFO     |    Scaler: models/trained/scaler_metrla.pkl
+2026-03-18 23:30:47,577 | Prediction | INFO     |    Network: data/generated/map.net.xml
+2026-03-18 23:30:47,577 | Prediction | INFO     |    Mapping: interpolate
+2026-03-18 23:30:47,577 | Prediction | INFO     |    Device: auto
+2026-03-18 23:30:47,577 | Prediction | INFO     | 
+2026-03-18 23:30:47,577 | Prediction | INFO     | [Step 1/3] Parsing SUMO network...
+2026-03-18 23:30:47,590 | Prediction | INFO     | [Step 2/3] Initializing prediction pipeline...
+2026-03-18 23:30:48,645 | Prediction | INFO     | [Step 3/3] Running prediction...
+2026-03-18 23:30:48,676 | Prediction | INFO     | 
+📊 Prediction Summary:
+2026-03-18 23:30:48,677 | Prediction | INFO     | 
+  Horizon: t+5 minutes
+2026-03-18 23:30:48,677 | Prediction | INFO     |     Mean speed: 29.57 km/h
+2026-03-18 23:30:48,677 | Prediction | INFO     |     Speed range: [8.61, 63.32] km/h
+2026-03-18 23:30:48,678 | Prediction | INFO     |     Std dev: 10.66 km/h
+2026-03-18 23:30:48,678 | Prediction | INFO     | 
+  Horizon: t+10 minutes
+2026-03-18 23:30:48,678 | Prediction | INFO     |     Mean speed: 29.35 km/h
+2026-03-18 23:30:48,678 | Prediction | INFO     |     Speed range: [8.56, 62.88] km/h
+2026-03-18 23:30:48,678 | Prediction | INFO     |     Std dev: 10.58 km/h
+2026-03-18 23:30:48,678 | Prediction | INFO     | 
+  Horizon: t+15 minutes
+2026-03-18 23:30:48,678 | Prediction | INFO     |     Mean speed: 29.28 km/h
+2026-03-18 23:30:48,678 | Prediction | INFO     |     Speed range: [8.53, 62.70] km/h
+2026-03-18 23:30:48,678 | Prediction | INFO     |     Std dev: 10.54 km/h
+2026-03-18 23:30:48,679 | Prediction | INFO     | 
+📋 Sample Predictions:
+2026-03-18 23:30:48,679 | Prediction | INFO     | 
+  1:
+2026-03-18 23:30:48,679 | Prediction | INFO     |     t+5min:  61.10 km/h
+2026-03-18 23:30:48,679 | Prediction | INFO     |     t+10min: 60.56 km/h
+2026-03-18 23:30:48,679 | Prediction | INFO     |     t+15min: 60.36 km/h
+2026-03-18 23:30:48,679 | Prediction | INFO     |     Confidence: 0.527
+2026-03-18 23:30:48,679 | Prediction | INFO     | 
+  10:
+2026-03-18 23:30:48,679 | Prediction | INFO     |     t+5min:  28.18 km/h
+2026-03-18 23:30:48,679 | Prediction | INFO     |     t+10min: 28.04 km/h
+2026-03-18 23:30:48,680 | Prediction | INFO     |     t+15min: 28.00 km/h
+2026-03-18 23:30:48,680 | Prediction | INFO     |     Confidence: 0.853
+2026-03-18 23:30:48,680 | Prediction | INFO     | 
+  11:
+2026-03-18 23:30:48,680 | Prediction | INFO     |     t+5min:  26.76 km/h
+2026-03-18 23:30:48,680 | Prediction | INFO     |     t+10min: 26.59 km/h
+2026-03-18 23:30:48,680 | Prediction | INFO     |     t+15min: 26.55 km/h
+2026-03-18 23:30:48,680 | Prediction | INFO     |     Confidence: 0.732
+2026-03-18 23:30:48,682 | Prediction | INFO     | 
+✅ Prediction completed successfully!
+2026-03-18 23:30:48,682 | Prediction | INFO     |    Predictions saved to: data/comparison/predictions.json
+2026-03-18 23:30:48,683 | Prediction | INFO     | 
+2026-03-18 23:30:48,683 | Prediction | INFO     | Next steps:
+2026-03-18 23:30:48,683 | Prediction | INFO     |   1. Review predictions: cat data/comparison/predictions.json | python -m json.tool
+2026-03-18 23:30:48,683 | Prediction | INFO     |   2. Generate routes: python scripts/3_generate_routes.py
+2026-03-18 23:30:48,683 | Prediction | INFO     |   3. Run SUMO simulation: python scripts/4_run_sumo_gui.py
+2026-03-18 23:30:48,683 | Prediction | INFO     | 
+2026-03-18 23:30:51,493 | Routing | INFO     | ======================================================================
+2026-03-18 23:30:51,494 | Routing | INFO     | ITS TRAFFIC ROUTING
+2026-03-18 23:30:51,494 | Routing | INFO     | ======================================================================
+2026-03-18 23:30:51,494 | Routing | INFO     | 
+Configuration:
+2026-03-18 23:30:51,494 | Routing | INFO     |    Scenario: data/comparison
+2026-03-18 23:30:51,494 | Routing | INFO     |    Network: /home/mohamednady/laptop/python_projects/capstoneG12/traffic-its-system/data/sumo/map.net.xml
+2026-03-18 23:30:51,494 | Routing | INFO     |    Output: data/comparison
+2026-03-18 23:30:51,494 | Routing | INFO     |    Emergency priority: True
+2026-03-18 23:30:51,494 | Routing | INFO     | 
+2026-03-18 23:30:51,494 | Routing | INFO     | [Step 1/6] Loading scenario data...
+2026-03-18 23:30:51,494 | Routing | INFO     | [DATA] Loading scenario data from: data/comparison
+2026-03-18 23:30:51,495 | Routing | INFO     |    [OK] Loaded predictions for 95 edges
+2026-03-18 23:30:51,500 | Routing | INFO     |    [OK] Loaded 2000 vehicles
+2026-03-18 23:30:51,500 | Routing | INFO     |    [OK] Loaded edge states
+2026-03-18 23:30:51,501 | Routing | INFO     | [Step 2/6] Parsing SUMO network...
+2026-03-18 23:30:51,525 | Routing | INFO     | [Step 3/6] Building routing graph...
+2026-03-18 23:30:51,525 | Routing | INFO     |    Loaded predictions for 95 edges
+2026-03-18 23:30:51,526 | Routing | INFO     |    Loaded congestion for 95 edges
+2026-03-18 23:30:51,529 | Routing | INFO     | 
+   Graph statistics:
+2026-03-18 23:30:51,530 | Routing | INFO     |       Nodes: 33
+2026-03-18 23:30:51,530 | Routing | INFO     |       Edges: 95
+2026-03-18 23:30:51,530 | Routing | INFO     |       Avg predicted speed: 29.57 km/h
+2026-03-18 23:30:51,530 | Routing | INFO     |       Avg travel time: 2.48 seconds
+2026-03-18 23:30:51,530 | Routing | INFO     |       Avg congestion: 100.00%
+2026-03-18 23:30:51,530 | Routing | INFO     |       Avg safety score: 0.61
+2026-03-18 23:30:51,530 | Routing | INFO     | 
+[Step 4/6] Preparing vehicles...
+2026-03-18 23:30:51,530 | Routing | INFO     | 
+[PREP] Preparing vehicles for routing...
+2026-03-18 23:30:51,538 | Routing | INFO     |    Network connectivity:
+2026-03-18 23:30:51,538 | Routing | INFO     |       Total nodes: 33
+2026-03-18 23:30:51,538 | Routing | INFO     |       Usable nodes: 33 (100.0%)
+2026-03-18 23:30:51,538 | Routing | INFO     |       Connected components: 1
+2026-03-18 23:30:51,538 | Routing | INFO     |       Strongly connected: True
+2026-03-18 23:30:51,589 | Routing | INFO     |    [OK] Prepared 1926 vehicles
+2026-03-18 23:30:51,589 | Routing | INFO     |       Emergency: 40
+2026-03-18 23:30:51,590 | Routing | INFO     |       Normal: 1886
+2026-03-18 23:30:51,590 | Routing | INFO     |       Skipped: 74 vehicles
+2026-03-18 23:30:51,590 | Routing | INFO     |          Edge not found: 0
+2026-03-18 23:30:51,590 | Routing | INFO     |          Same origin/dest: 74
+2026-03-18 23:30:51,590 | Routing | INFO     |          Not in largest SCC: 0
+2026-03-18 23:30:51,590 | Routing | INFO     |          No directed path: 0
+2026-03-18 23:30:51,590 | Routing | INFO     | 
+[Step 5/6] Routing vehicles...
+2026-03-18 23:30:52,002 | Routing | INFO     | 
+   Routing summary:
+2026-03-18 23:30:52,002 | Routing | INFO     |       Total vehicles: 1926
+2026-03-18 23:30:52,002 | Routing | INFO     |       Emergency: 40
+2026-03-18 23:30:52,003 | Routing | INFO     |       Normal: 1886
+2026-03-18 23:30:52,003 | Routing | INFO     |       Avg cost: 8.19 seconds
+2026-03-18 23:30:52,003 | Routing | INFO     |       Avg length: 63.70 meters
+2026-03-18 23:30:52,003 | Routing | INFO     |       Algorithm usage:
+2026-03-18 23:30:52,003 | Routing | INFO     |          A*: 1886
+2026-03-18 23:30:52,003 | Routing | INFO     |          Dijkstra: 40
+2026-03-18 23:30:52,003 | Routing | INFO     | 
+[Step 6/6] Generating SUMO files...
+2026-03-18 23:30:52,170 | Routing | INFO     | 
+[OK] Routing completed successfully!
+2026-03-18 23:30:52,170 | Routing | INFO     | 
+   Generated files:
+2026-03-18 23:30:52,170 | Routing | INFO     |       Routes: data/comparison/routes.rou.xml
+2026-03-18 23:30:52,170 | Routing | INFO     |       Config: data/comparison/simulation.sumocfg
+2026-03-18 23:30:52,170 | Routing | INFO     |       Metadata: data/comparison/routing_metadata.json
+2026-03-18 23:30:52,171 | Routing | INFO     | 
+2026-03-18 23:30:52,171 | Routing | INFO     | Next steps:
+2026-03-18 23:30:52,171 | Routing | INFO     |    1. Run SUMO-GUI: sumo-gui -c data/comparison/simulation.sumocfg
+2026-03-18 23:30:52,171 | Routing | INFO     |    2. Or use script: python scripts/4_run_sumo_gui.py --config data/comparison/simulation.sumocfg
+2026-03-18 23:30:52,171 | Routing | INFO     | 
