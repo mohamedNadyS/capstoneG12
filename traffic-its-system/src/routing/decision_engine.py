@@ -149,8 +149,21 @@ class RoutingDecisionEngine:
         
         # Add overcrowded edges to avoid set (for normal vehicles)
         if vehicle_type == 'normal':
-            overcrowded = self._get_overcrowded_edges(threshold=0.9)
-            avoid_edges.update(overcrowded)
+            # ✅ NEW: Gradual threshold based on network load
+            # Start with 0.99, relax to 1.0 if too many fallbacks
+            threshold = 0.99
+            
+            # If too many recent fallbacks, become more permissive
+            if hasattr(self.astar, 'fallback_stats'):
+                no_avoid_pct = self.astar.fallback_stats.get('no_avoid', 0) / max(self.astar.total_routes, 1)
+                if no_avoid_pct > 0.3:  # More than 30% using fallback
+                    threshold = 1.0  # Only avoid completely full edges
+            
+            overcrowded = self._get_overcrowded_edges(threshold=threshold)
+            
+            # Only 30% of vehicles avoid
+            if hash(vehicle_id) % 10 < 3:
+                avoid_edges.update(overcrowded)
         
         # Route using selected algorithm
         if decision.algorithm == 'A*':
@@ -158,8 +171,26 @@ class RoutingDecisionEngine:
                 start_node=origin_node,
                 goal_node=destination_node,
                 avoid_edges=avoid_edges,
-                cost_function=decision.cost_function
+                cost_function='time',
+                vehicle_id=vehicle_id
             )
+
+            if route and avoid_edges:
+                # Try without avoidance to compare
+                direct_route = self.astar.find_path(
+                    start_node=origin_node,
+                    goal_node=destination_node,
+                    avoid_edges=set(),  # No avoidance
+                    cost_function='time',
+                    vehicle_id=vehicle_id
+                )
+                
+                if direct_route:
+                    # If AI route is >50% longer, use direct route instead
+                    if len(route['edges']) > len(direct_route['edges']) * 1.5:
+                        route = direct_route
+                        route['note'] = 'Used direct route (detour too long)'
+                        
         else:  # Dijkstra
             route = self.dijkstra.find_path(
                 start_node=origin_node,
@@ -174,6 +205,32 @@ class RoutingDecisionEngine:
             route['vehicle_id'] = vehicle_id
             route['vehicle_type'] = vehicle_type
             route['decision'] = decision
+            route['algorithm'] = decision.algorithm  # Add for stats
+            
+            # Add calculated fields if missing
+            if 'num_edges' not in route:
+                route['num_edges'] = len(route.get('edges', []))
+            
+            if 'length' not in route:
+                # Calculate total length from edges
+                total_length = 0.0
+                nodes = route.get('nodes', [])
+                edges = route.get('edges', [])
+                
+                # Try to get length from graph edges
+                for i, edge_id in enumerate(edges):
+                    if i < len(nodes) - 1:
+                        from_node = nodes[i]
+                        to_node = nodes[i + 1]
+                        try:
+                            # Access MultiDiGraph edge data
+                            edge_data = self.graph_builder.graph[from_node][to_node][edge_id]
+                            total_length += edge_data.get('length', edge_data.get('distance', 0.0))
+                        except:
+                            # Fallback: estimate 100m per edge
+                            total_length += 100.0
+                
+                route['length'] = total_length if total_length > 0 else len(edges) * 100.0
             
             # Update tracking
             self._track_route(vehicle_id, route['edges'])
@@ -234,6 +291,15 @@ class RoutingDecisionEngine:
         
         # Calculate statistics
         stats = self._calculate_routing_stats(routes)
+        
+        # Print A* fallback statistics if available
+        if 'astar_fallback_stats' in stats and stats.get('astar_total_routes', 0) > 0:
+            print(f"\n   [A*] Fallback Strategy Usage:")
+            total = stats['astar_total_routes']
+            for method, count in stats['astar_fallback_stats'].items():
+                if count > 0:
+                    percentage = (count / total * 100)
+                    print(f"      {method}: {count} ({percentage:.1f}%)")
         
         return {
             'routes': routes,
@@ -302,6 +368,11 @@ class RoutingDecisionEngine:
             'A*': astar_count,
             'Dijkstra': dijkstra_count
         }
+        
+        # Add A* fallback statistics if available
+        if hasattr(self.astar, 'fallback_stats'):
+            stats['astar_fallback_stats'] = dict(self.astar.fallback_stats)
+            stats['astar_total_routes'] = self.astar.total_routes
         
         return stats
 

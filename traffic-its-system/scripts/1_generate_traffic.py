@@ -171,7 +171,6 @@ def main():
             **traffic_config['vehicle_distribution']
         }
         
-        # Override with user inputs if provided
         if args.emergency_ratio is not None:
             generator_config['emergency_vehicle_ratio'] = args.emergency_ratio
         

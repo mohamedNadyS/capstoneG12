@@ -1,21 +1,15 @@
-"""
-Run Complete Model Testing and Evaluation
-Execute this after training to get comprehensive results
-"""
-
 import os
 import sys
 import numpy as np
 import torch
 import matplotlib
-matplotlib.use('Agg')  # Non-interactive backend
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
 import json
 
-# Import from your training script
-from main1 import load_metr_la, TrafficDataset, SpatioTemporalGAT
+from train import load_metr_la, TrafficDataset, SpatioTemporalGAT
 from torch.utils.data import DataLoader
 from torch_geometric.utils import dense_to_sparse
 import joblib
@@ -29,7 +23,6 @@ def test_model_comprehensive():
     print(" "*20 + "MODEL TESTING & EVALUATION")
     print("="*80 + "\n")
     
-    # Configuration
     DATA_DIR = "./data/metr-la"
     MODEL_PATH = "gat_metrla_best.pth"
     SCALER_PATH = "scaler_metrla.pkl"
@@ -37,23 +30,18 @@ def test_model_comprehensive():
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    
-    # ===== STEP 1: LOAD DATA =====
     print("📂 [1/7] Loading test data...")
     speeds, adj = load_metr_la(DATA_DIR)
     T, N = speeds.shape
     
-    # Split (same as training)
     val_split = int(T * 0.85)
     test_speeds = speeds[val_split:]
     
     print(f"    Test timesteps: {test_speeds.shape[0]} ({test_speeds.shape[0]*5/60:.1f} hours)")
     print(f"    Number of sensors: {N}")
     
-    # Load scaler
     scaler = joblib.load(SCALER_PATH)
     
-    # Create dataset
     test_ds = TrafficDataset(test_speeds, input_window=12, pred_horizon=3, scaler=scaler)
     test_loader = DataLoader(test_ds, batch_size=32, shuffle=False, num_workers=0)
     
@@ -235,7 +223,86 @@ def test_model_comprehensive():
     plt.savefig(f'{OUTPUT_DIR}/per_node_mae.png', dpi=150, bbox_inches='tight')
     print(f"    ✓ Saved: {OUTPUT_DIR}/per_node_mae.png")
     plt.close()
-    
+    # ------------------------------------------------------------------------------------
+    # 5. ERROR DISTRIBUTION (Poster Style)
+    # ------------------------------------------------------------------------------------
+    print("    ✓ Creating poster-style error distribution graphs...")
+
+    # Custom Poster Theme
+    plt.style.use('default')
+    plt.rcParams.update({
+        "axes.facecolor": "#0f1116",
+        "figure.facecolor": "#0f1116",
+        "axes.edgecolor": "#ffffff",
+        "axes.labelcolor": "#ffffff",
+        "xtick.color": "#ffffff",
+        "ytick.color": "#ffffff",
+        "text.color": "#ffffff",
+        "font.size": 12,
+        "grid.color": "#444444",
+        "grid.linestyle": "--",
+    })
+
+    # Color palette (strong, vibrant)
+    POSTER_COLORS = ["#4CC9F0", "#F72585", "#7209B7"]   # horizon 1,2,3
+
+    fig, axes = plt.subplots(1, 3, figsize=(16, 5))
+    fig.patch.set_facecolor("#0f1116")
+
+    for h in range(3):
+        errors = preds_orig[:, h, :] - targets_orig[:, h, :]
+        
+        ax = axes[h]
+        ax.set_facecolor("#0f1116")
+
+        bins = np.linspace(errors.min(), errors.max(), 35)
+        ax.hist(errors.flatten(), bins=bins, 
+                edgecolor="#ffffff", 
+                alpha=0.8,
+                color=POSTER_COLORS[h])
+
+        ax.axvline(0, color="#ffffff", linestyle='--', linewidth=1.5)
+
+        ax.set_title(f"Error Distribution – Horizon {h+1}", fontsize=14, weight="bold")
+        ax.set_xlabel("Prediction Error (km/h)")
+        ax.set_ylabel("Frequency")
+        ax.grid(True, axis="y")
+
+    plt.tight_layout()
+    plt.savefig(f"{OUTPUT_DIR}/error_distribution_poster.png", dpi=200, bbox_inches="tight")
+    plt.close()
+
+    # ------------------------------------------------------------------------------------
+    # 6. Combined Average Error Distribution
+    # ------------------------------------------------------------------------------------
+    print("    ✓ Creating combined average error distribution graph...")
+
+    avg_errors = np.mean(preds_orig - targets_orig, axis=1)  # average across horizons
+    avg_errors_flat = avg_errors.flatten()
+
+    plt.figure(figsize=(10, 5))
+    plt.gca().set_facecolor("#0f1116")
+
+    bins = np.linspace(avg_errors_flat.min(), avg_errors_flat.max(), 40)
+
+    plt.hist(avg_errors_flat, 
+            bins=bins, 
+            color="#4CC9F0", 
+            edgecolor="#ffffff",
+            alpha=0.85)
+
+    plt.axvline(0, color="#ffffff", linestyle='--', linewidth=1.5)
+
+    plt.title("Combined Average Error Distribution (All Horizons)",
+            fontsize=16, weight="bold", color="white")
+    plt.xlabel("Average Prediction Error (km/h)")
+    plt.ylabel("Frequency")
+    plt.grid(True, axis="y", linestyle="--", alpha=0.5)
+
+    plt.tight_layout()
+    plt.savefig(f"{OUTPUT_DIR}/error_distribution_avg.png", dpi=200, bbox_inches="tight")
+    plt.close()
+
     # 5. Metrics comparison chart
     fig, ax = plt.subplots(figsize=(10, 6))
     horizons = [1, 2, 3]

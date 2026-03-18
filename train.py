@@ -11,12 +11,9 @@ from torch_geometric.utils import dense_to_sparse
 from sklearn.preprocessing import StandardScaler
 import joblib
 
-# ============================
-# CONFIG
-# ============================
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-INPUT_WINDOW = 12      # 12 × 5 min = 1 hour history
-PRED_HORIZON = 3       # predict 15 minutes ahead
+INPUT_WINDOW = 12
+PRED_HORIZON = 3
 BATCH_SIZE = 32
 EPOCHS = 40
 LR = 1e-3

@@ -245,6 +245,8 @@ def main():
         sumo_dir = config_loader.get('system_config', 'paths.sumo_dir', './data/sumo')
         net_file_name = config_loader.get('system_config', 'sumo.net_file', 'map.net.xml')
         net_file = str(Path(sumo_dir) / net_file_name)
+        # Convert to absolute path to avoid relative path issues
+        net_file = str(Path(net_file).resolve())
     
     logger.info(f"\nConfiguration:")
     logger.info(f"   Scenario: {scenario_dir}")
